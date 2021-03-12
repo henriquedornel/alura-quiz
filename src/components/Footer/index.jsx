@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FooterWrapper = styled.footer`
-  background-color: #00000070;
-  padding: 20px;
+const Footer = styled.footer`
   display: flex;
   align-items: center;
+  padding: 20px;
   border-radius: 4px; 
+  background-color: #00000070;
   img {
     width: 58px;
     margin-right: 23px;
@@ -25,21 +25,19 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-export default function Footer(props) {
+export default function FooterComponent({ props }) {
   return (
-    <FooterWrapper {...props}>
+    <Footer {...props}>
       <a href="https://www.alura.com.br/">
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
-        {' '}
-        a
+        Orgulhosamente criado durante a
         {' '}
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
         </a>
       </p>
-    </FooterWrapper>
+    </Footer>
   );
 }

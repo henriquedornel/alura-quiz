@@ -1,11 +1,26 @@
-import styled from 'styled-components';
-
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-function Logo({ className }) {
+const Logo = styled.svg`
+  display: block;
+  margin: auto;
+  @media screen and (max-width: 500px) {
+    margin: 0;
+  }
+`;
+
+Logo.defaultProps = {
+  className: '',
+};
+
+Logo.propTypes = {
+  className: PropTypes.string,
+};
+
+export default function LogoComponent({ className }) {
   return (
-    <svg className={className} width="135" height="67" viewBox="0 0 135 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <Logo className={className} width="135" height="67" viewBox="0 0 135 67" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0)">
         <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="2" y="2" width="110" height="50" fill="black">
           <rect fill="white" x="2" y="2" width="110" height="50" />
@@ -25,20 +40,6 @@ function Logo({ className }) {
           <rect width="134.373" height="67" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Logo>
   );
 }
-
-Logo.propTypes = {
-  className: PropTypes.string.isRequired,
-};
-
-const QuizLogo = styled(Logo)`
-  margin: auto;
-  display: block;
-  @media screen and (max-width: 500px) {
-    margin: 0;
-  }
-`;
-
-export default QuizLogo;
