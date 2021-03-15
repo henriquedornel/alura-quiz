@@ -1,37 +1,33 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import QuizScreen from '../../src/screens/Quiz';
 
-export default function ExternalQuizPage({ externalDb }) {
+function ExternalQuiz({ externalDB }) {
+  const { error } = externalDB;
+
   return (
-    <ThemeProvider theme={externalDb.theme}>
-      <QuizScreen
-        externalBg={externalDb.bg}
-        externalQuestions={externalDb.questions}
-      />
-    </ThemeProvider>
+    <QuizScreen externalDB={externalDB} fetchError={error} />
   );
 }
 
 export async function getServerSideProps(context) {
-  const [projectName, githubUser] = context.query.id.split('___');
+  const [projectName, author] = context.query.id.split('.');
 
-  try {
-    const externalDb = await fetch(`https://${projectName}.${githubUser}.vercel.app/api/db`)
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        throw new Error('Falha ao carregar os dados');
-      })
-      .then((resObj) => resObj);
+  const externalDB = await fetch(`https://${projectName}.${author}.vercel.app/api/db`)
+    .then((res) => {
+      if (res.ok) {
+        return res ? res.json() : null;
+      }
+      throw new Error('Falha ao carregar os dados');
+    })
+    .catch((err) => {
+      throw new Error(err);
+    });
 
-    return {
-      props: {
-        externalDb,
-      },
-    };
-  } catch (err) {
-    throw new Error(err);
-  }
+  return {
+    props: {
+      externalDB,
+    },
+  };
 }
+
+export default ExternalQuiz;
