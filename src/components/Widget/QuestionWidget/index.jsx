@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Widget from '../index';
 import BackLinkArrow from '../../BackLinkArrow';
@@ -76,3 +77,11 @@ export default function QuestionWidget({
     </Widget>
   );
 }
+
+QuestionWidget.propTypes = {
+  question: PropTypes.object.isRequired,
+  questionIndex: PropTypes.number.isRequired,
+  totalQuestions: PropTypes.number.isRequired,
+  addResult: PropTypes.func.isRequired,
+  handleNext: PropTypes.func.isRequired,
+};

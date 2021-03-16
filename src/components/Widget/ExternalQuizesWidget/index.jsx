@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 import Widget from '../index';
@@ -52,3 +53,7 @@ export default function ExternalQuizesWidget({ externals }) {
     </Widget>
   );
 }
+
+ExternalQuizesWidget.propTypes = {
+  externals: PropTypes.arrayOf(PropTypes.string).isRequired,
+};

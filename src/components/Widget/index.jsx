@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -20,6 +21,10 @@ const Widget = styled.div`
   }
 `;
 
+Widget.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
@@ -30,6 +35,10 @@ Widget.Header = styled.header`
     margin: 0;
   }
 `;
+
+Widget.Header.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
@@ -44,6 +53,10 @@ Widget.Content = styled.div`
     list-style: none;
   }
 `;
+
+Widget.Content.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 Widget.Input = styled.input`
   width: 100%;
@@ -60,6 +73,17 @@ Widget.Input = styled.input`
     opacity: 1;
   }
 `;
+
+Widget.Input.defaultProps = {
+  value: '',
+};
+
+Widget.Input.propTypes = {
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+};
 
 Widget.Button = styled.button`
   width: 100%;
@@ -85,6 +109,11 @@ Widget.Button = styled.button`
   }
 `;
 
+Widget.Button.propTypes = {
+  type: PropTypes.oneOf(['submit', 'button']).isRequired,
+  children: PropTypes.node.isRequired,
+};
+
 Widget.Topic = styled.a`
   margin-bottom: 8px;
   padding: 10px 15px;
@@ -105,6 +134,10 @@ Widget.Topic = styled.a`
   }
 `;
 
+Widget.Topic.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 Widget.Form = styled.form`
   label {
     &[data-selected="true"] {
@@ -124,5 +157,9 @@ Widget.Form = styled.form`
     margin-top: 24px;
   }
 `;
+
+Widget.Form.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Widget;

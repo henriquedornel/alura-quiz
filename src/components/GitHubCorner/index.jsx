@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const GitHubCorner = styled.a`
   position: absolute;
@@ -50,3 +51,7 @@ export default function GitHubCornerComponent({ projectUrl, ...props }) {
     </GitHubCorner>
   );
 }
+
+GitHubCornerComponent.propTypes = {
+  projectUrl: PropTypes.string.isRequired,
+};

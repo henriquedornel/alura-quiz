@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Widget from '../index';
 import BackLinkArrow from '../../BackLinkArrow';
@@ -23,3 +24,7 @@ export default function FinishedWidget({ results }) {
     </Widget>
   );
 }
+
+FinishedWidget.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.bool).isRequired,
+};

@@ -21,6 +21,6 @@ module.exports = {
     'linebreak-style': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/prop-types': 'off',
+    'react/forbid-prop-types': 'off',
   },
 };

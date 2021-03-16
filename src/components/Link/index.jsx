@@ -1,5 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
+import PropTypes from 'prop-types';
 
 export default function Link({ href, children, ...props }) {
   return (
@@ -10,3 +11,8 @@ export default function Link({ href, children, ...props }) {
     </NextLink>
   );
 }
+
+Link.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};

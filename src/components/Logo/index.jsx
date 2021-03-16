@@ -10,14 +10,6 @@ const Logo = styled.svg`
   }
 `;
 
-Logo.defaultProps = {
-  className: '',
-};
-
-Logo.propTypes = {
-  className: PropTypes.string,
-};
-
 export default function LogoComponent({ className, ...props }) {
   return (
     <Logo
@@ -51,3 +43,11 @@ export default function LogoComponent({ className, ...props }) {
     </Logo>
   );
 }
+
+LogoComponent.defaultProps = {
+  className: '',
+};
+
+LogoComponent.propTypes = {
+  className: PropTypes.string,
+};

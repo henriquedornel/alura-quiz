@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
@@ -52,3 +53,7 @@ export default function MainQuizWidget({ db }) {
     </Widget>
   );
 }
+
+MainQuizWidget.propTypes = {
+  db: PropTypes.object.isRequired,
+};

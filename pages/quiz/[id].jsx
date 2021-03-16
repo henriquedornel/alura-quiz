@@ -1,13 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import QuizScreen from '../../src/screens/Quiz';
-
-function ExternalQuiz({ externalDB }) {
-  const { error } = externalDB;
-
-  return (
-    <QuizScreen externalDB={externalDB} fetchError={error} />
-  );
-}
 
 export async function getServerSideProps(context) {
   const [projectName, author] = context.query.id.split('.');
@@ -30,4 +24,14 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default ExternalQuiz;
+export default function ExternalQuiz({ externalDB }) {
+  const { error } = externalDB;
+
+  return (
+    <QuizScreen externalDB={externalDB} fetchError={error} />
+  );
+}
+
+ExternalQuiz.propTypes = {
+  externalDB: PropTypes.object.isRequired,
+};

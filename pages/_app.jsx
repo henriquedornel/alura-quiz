@@ -1,5 +1,6 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 import db from '../db.json';
 
@@ -54,3 +55,12 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+App.defaultProps = {
+  pageProps: undefined,
+};
+
+App.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.any,
+};

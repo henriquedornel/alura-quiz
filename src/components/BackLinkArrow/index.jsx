@@ -17,10 +17,6 @@ const BackLinkArrow = styled(Link)`
   }
 `;
 
-BackLinkArrow.propTypes = {
-  href: PropTypes.string.isRequired,
-};
-
 export default function BackLinkArrowComponent({ href, ...props }) {
   return (
     <BackLinkArrow href={href} {...props}>
@@ -30,3 +26,7 @@ export default function BackLinkArrowComponent({ href, ...props }) {
     </BackLinkArrow>
   );
 }
+
+BackLinkArrowComponent.propTypes = {
+  href: PropTypes.string.isRequired,
+};
