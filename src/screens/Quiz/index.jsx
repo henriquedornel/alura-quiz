@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
 import Background from '../../components/Background';
@@ -19,7 +20,7 @@ const screenStates = {
   ERROR: 'ERROR',
 };
 
-export default function Quiz({ externalDB, fetchError }) {
+export default function QuizScreen({ externalDB, fetchError }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -75,3 +76,13 @@ export default function Quiz({ externalDB, fetchError }) {
     </ThemeProvider>
   );
 }
+
+QuizScreen.defaultProps = {
+  externalDB: undefined,
+  fetchError: undefined,
+};
+
+QuizScreen.propTypes = {
+  externalDB: PropTypes.object,
+  fetchError: PropTypes.any,
+};
