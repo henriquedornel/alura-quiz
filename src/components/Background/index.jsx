@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Background = styled.div`
   flex: 1;
@@ -31,5 +32,10 @@ const Background = styled.div`
     }
   }
 `;
+
+Background.propTypes = {
+  backgroundImage: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
 
 export default Background;

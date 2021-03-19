@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
   width: 100%;
@@ -10,5 +11,9 @@ const Container = styled.div`
     padding: 15px;
   }
 `;
+
+Container.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Container;
