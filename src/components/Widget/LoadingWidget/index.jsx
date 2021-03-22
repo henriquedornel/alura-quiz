@@ -12,8 +12,8 @@ export default function LoadingWidget() {
       </Widget.Header>
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
         <Lottie
-          width="200px"
-          height="200px"
+          width="150px"
+          height="150px"
           className="lottie-container basic"
           config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
         />
