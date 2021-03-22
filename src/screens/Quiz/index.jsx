@@ -9,6 +9,7 @@ import LoadingWidget from '../../components/Widget/LoadingWidget';
 import QuestionWidget from '../../components/Widget/QuestionWidget';
 import FinishedWidget from '../../components/Widget/FinishedWidget';
 import ErrorWidget from '../../components/Widget/ErrorWidget';
+import ExternalQuizesWidget from '../../components/Widget/ExternalQuizesWidget';
 import GitHubCorner from '../../components/GitHubCorner';
 
 import db from '../../../db.json';
@@ -25,7 +26,7 @@ export default function QuizScreen({ externalDB, fetchError }) {
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const { bg, theme, questions } = externalDB || db;
+  const { bg, title, appUrl, theme, questions } = externalDB || db;
   const questionIndex = currentQuestion;
   const question = questions[questionIndex];
   const totalQuestions = questions.length;
@@ -58,7 +59,9 @@ export default function QuizScreen({ externalDB, fetchError }) {
       <Background backgroundImage={bg}>
         <Container>
           <Logo />
-          {screenState === screenStates.LOADING && <LoadingWidget />}
+          {screenState === screenStates.LOADING && (
+            <LoadingWidget />
+          )}
           {screenState === screenStates.MOUNTED && (
             <QuestionWidget
               question={question}
@@ -68,8 +71,15 @@ export default function QuizScreen({ externalDB, fetchError }) {
               handleNext={handleNext}
             />
           )}
-          {screenState === screenStates.FINISHED && <FinishedWidget results={results} />}
-          {screenState === screenStates.ERROR && <ErrorWidget />}
+          {screenState === screenStates.FINISHED && (
+            <>
+              <FinishedWidget title={title} url={appUrl} results={results} />
+              <ExternalQuizesWidget externals={db.external} />
+            </>
+          )}
+          {screenState === screenStates.ERROR && (
+            <ErrorWidget />
+          )}
         </Container>
         <GitHubCorner projectUrl={db.projectUrl} />
       </Background>

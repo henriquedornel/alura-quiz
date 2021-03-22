@@ -149,6 +149,9 @@ Widget.Form = styled.form`
         background-color: ${({ theme }) => theme.colors.wrong};
       }
     }
+    &[data-correct="true"] {
+      background-color: ${({ theme }) => theme.colors.success};
+    }
     &:focus {
       opacity: 1;
     } 

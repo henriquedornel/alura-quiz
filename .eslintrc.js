@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     'linebreak-style': 'off',
+    'object-curly-newline': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/forbid-prop-types': 'off',

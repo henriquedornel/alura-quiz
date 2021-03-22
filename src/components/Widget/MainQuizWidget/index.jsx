@@ -46,7 +46,7 @@ export default function MainQuizWidget({ db }) {
             onChange={(e) => onChange(e.target.value, setUserName)}
           />
           <Widget.Button type="submit" disabled={isButtonDisabled()}>
-            Jogar
+            Jogar!
           </Widget.Button>
         </form>
       </Widget.Content>
