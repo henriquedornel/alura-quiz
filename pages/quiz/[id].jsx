@@ -46,7 +46,6 @@ export async function getServerSideProps({ query }) {
 export default function Quiz({ externalDB, project }) {
   const router = useRouter();
   const { userName } = router.query;
-  const { error } = externalDB;
   const quiz = { project, ...externalDB };
 
   if (!userName) {
@@ -65,7 +64,7 @@ export default function Quiz({ externalDB, project }) {
   }
 
   return (
-    <QuizScreen externalDB={externalDB} project={quiz.project} fetchError={error} />
+    <QuizScreen externalDB={externalDB} project={quiz.project} />
   );
 }
 

@@ -8,7 +8,6 @@ import Logo from '../../components/Logo';
 import LoadingWidget from '../../components/Widget/LoadingWidget';
 import QuestionWidget from '../../components/Widget/QuestionWidget';
 import FinishedWidget from '../../components/Widget/FinishedWidget';
-import ErrorWidget from '../../components/Widget/ErrorWidget';
 import GitHubCorner from '../../components/GitHubCorner';
 
 import db from '../../../db/main.json';
@@ -17,10 +16,9 @@ const screenStates = {
   LOADING: 'LOADING',
   MOUNTED: 'MOUNTED',
   FINISHED: 'FINISHED',
-  ERROR: 'ERROR',
 };
 
-export default function QuizScreen({ externalDB, project, fetchError }) {
+export default function QuizScreen({ externalDB, project }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -47,10 +45,6 @@ export default function QuizScreen({ externalDB, project, fetchError }) {
 
   useEffect(() => {
     setTimeout(() => {
-      if (!totalQuestions || fetchError) {
-        setScreenState(screenStates.ERROR);
-        return;
-      }
       setScreenState(screenStates.MOUNTED);
     }, 2000);
   }, []);
@@ -76,9 +70,6 @@ export default function QuizScreen({ externalDB, project, fetchError }) {
           {screenState === screenStates.FINISHED && (
             <FinishedWidget title={title} project={project} quizUrl={quizUrl} results={results} />
           )}
-          {screenState === screenStates.ERROR && (
-            <ErrorWidget />
-          )}
         </Container>
         <GitHubCorner repository={db.repository} />
       </Background>
@@ -89,9 +80,4 @@ export default function QuizScreen({ externalDB, project, fetchError }) {
 QuizScreen.propTypes = {
   externalDB: PropTypes.object.isRequired,
   project: PropTypes.string.isRequired,
-  fetchError: PropTypes.any,
-};
-
-QuizScreen.defaultProps = {
-  fetchError: undefined,
 };
