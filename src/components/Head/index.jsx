@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import db from '../../../db/main.json';
 
 export default function Head({ title, description, url, bg }) {
-  const pageTitle = `${title} - ${db.title}`;
+  const pageTitle = title === db.title ? title : `${title} - ${db.title}`;
 
   return (
     <NextHead>
