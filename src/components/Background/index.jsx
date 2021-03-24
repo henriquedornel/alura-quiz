@@ -4,11 +4,8 @@ import PropTypes from 'prop-types';
 const Background = styled.div`
   flex: 1;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url(${({ backgroundImage }) => backgroundImage});
-  background-color: ${({ theme }) => theme.colors.mainBg};
-  @media screen and (max-width: 500px) {
+  background-color: ${({ theme }) => theme.colors.bg};
+  @media screen and (max-width: 600px) {
     background-image: none;
     &:after {
       content: "";
@@ -34,8 +31,12 @@ const Background = styled.div`
 `;
 
 Background.propTypes = {
-  backgroundImage: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string,
   children: PropTypes.node.isRequired,
+};
+
+Background.defaultProps = {
+  backgroundImage: '',
 };
 
 export default Background;

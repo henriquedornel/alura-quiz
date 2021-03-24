@@ -22,13 +22,13 @@ const Social = styled.div`
   }
 `;
 
-export default function SocialComponent({ url, title, hashtags }) {
+export default function SocialComponent({ quizUrl, title, hashtags }) {
   return (
     <>
-      <p>Compartilhe este quiz nas redes sociais!</p>
+      <h4>Compartilhe este quiz nas redes sociais!</h4>
       <Social>
         <FacebookShareButton
-          url={url}
+          url={quizUrl}
           quote={title}
           hashtag={`#${hashtags[0]}`}
           className="social-media-button"
@@ -36,7 +36,7 @@ export default function SocialComponent({ url, title, hashtags }) {
           <FacebookIcon size={36} />
         </FacebookShareButton>
         <TwitterShareButton
-          url={url}
+          url={quizUrl}
           title={title}
           hashtags={hashtags}
           className="social-media-button"
@@ -44,7 +44,7 @@ export default function SocialComponent({ url, title, hashtags }) {
           <TwitterIcon size={36} />
         </TwitterShareButton>
         <WhatsappShareButton
-          url={url}
+          url={quizUrl}
           title={title}
         >
           <WhatsappIcon size={36} />
@@ -56,6 +56,6 @@ export default function SocialComponent({ url, title, hashtags }) {
 
 SocialComponent.propTypes = {
   title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  quizUrl: PropTypes.string.isRequired,
   hashtags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

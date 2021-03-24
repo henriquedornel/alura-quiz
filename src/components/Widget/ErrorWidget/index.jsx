@@ -7,12 +7,15 @@ export default function ErrorWidget() {
   return (
     <Widget>
       <Widget.Header>
-        <h3>Uops!!</h3>
+        <h3>Ops!</h3>
       </Widget.Header>
       <Widget.Content>
-        <p>Looks like there&apos;s no questions on this Quiz.</p>
-        <p>Try again later!</p>
-        <p><Link href="/">Click here to Restart</Link></p>
+        <p>Quiz não encontrado :(</p>
+        <Link href="/" style={{ color: '#fff', textDecoration: 'none' }}>
+          <Widget.Button type="button">
+            Procurar outros quizes
+          </Widget.Button>
+        </Link>
       </Widget.Content>
     </Widget>
   );

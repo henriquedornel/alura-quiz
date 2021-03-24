@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider } from 'styled-components';
 
+import Head from '../../components/Head';
 import Background from '../../components/Background';
 import Container from '../../components/Container';
 import Logo from '../../components/Logo';
@@ -9,10 +9,9 @@ import LoadingWidget from '../../components/Widget/LoadingWidget';
 import QuestionWidget from '../../components/Widget/QuestionWidget';
 import FinishedWidget from '../../components/Widget/FinishedWidget';
 import ErrorWidget from '../../components/Widget/ErrorWidget';
-import ExternalQuizesWidget from '../../components/Widget/ExternalQuizesWidget';
 import GitHubCorner from '../../components/GitHubCorner';
 
-import db from '../../../db.json';
+import db from '../../../db/main.json';
 
 const screenStates = {
   LOADING: 'LOADING',
@@ -21,15 +20,17 @@ const screenStates = {
   ERROR: 'ERROR',
 };
 
-export default function QuizScreen({ externalDB, fetchError }) {
+export default function QuizScreen({ externalDB, project, fetchError }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const { bg, title, appUrl, theme, questions } = externalDB || db;
+  const { bg, title, questions } = externalDB;
   const questionIndex = currentQuestion;
   const question = questions[questionIndex];
   const totalQuestions = questions.length;
+
+  const quizUrl = `${db.url}/quiz/${project}`;
 
   const addResult = (result) => {
     setResults([...results, result]);
@@ -51,11 +52,12 @@ export default function QuizScreen({ externalDB, fetchError }) {
         return;
       }
       setScreenState(screenStates.MOUNTED);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
+      <Head {...externalDB} url={quizUrl} />
       <Background backgroundImage={bg}>
         <Container>
           <Logo />
@@ -72,27 +74,24 @@ export default function QuizScreen({ externalDB, fetchError }) {
             />
           )}
           {screenState === screenStates.FINISHED && (
-            <>
-              <FinishedWidget title={title} url={appUrl} results={results} />
-              <ExternalQuizesWidget externals={db.external} />
-            </>
+            <FinishedWidget title={title} project={project} quizUrl={quizUrl} results={results} />
           )}
           {screenState === screenStates.ERROR && (
             <ErrorWidget />
           )}
         </Container>
-        <GitHubCorner projectUrl={db.projectUrl} />
+        <GitHubCorner repository={db.repository} />
       </Background>
-    </ThemeProvider>
+    </>
   );
 }
 
-QuizScreen.defaultProps = {
-  externalDB: undefined,
-  fetchError: undefined,
+QuizScreen.propTypes = {
+  externalDB: PropTypes.object.isRequired,
+  project: PropTypes.string.isRequired,
+  fetchError: PropTypes.any,
 };
 
-QuizScreen.propTypes = {
-  externalDB: PropTypes.object,
-  fetchError: PropTypes.any,
+QuizScreen.defaultProps = {
+  fetchError: undefined,
 };

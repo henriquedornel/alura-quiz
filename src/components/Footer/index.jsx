@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Footer = styled.footer`
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
   padding: 20px;
   border-radius: 4px; 
   background-color: #00000070;

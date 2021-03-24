@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Widget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
+  max-width: 350px;
+  margin: 0 auto;
   overflow: hidden;
   background-color: ${({ theme }) => theme.colors.mainBg};
   border: 1px solid ${({ theme }) => theme.colors.primary};
@@ -48,9 +48,23 @@ Widget.Content = styled.div`
   & > *:last-child {
     margin-bottom: 0;
   }
+  p {
+    height: 50px;
+  }
   ul {
+    margin-bottom: 40px;
     padding: 0;
     list-style: none;
+  }
+  h3 {
+    padding-bottom: 15px;
+    font-weight: normal;
+  }
+  h4 {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-align: center;
   }
 `;
 
@@ -74,15 +88,15 @@ Widget.Input = styled.input`
   }
 `;
 
-Widget.Input.defaultProps = {
-  value: '',
-};
-
 Widget.Input.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+};
+
+Widget.Input.defaultProps = {
+  value: '',
 };
 
 Widget.Button = styled.button`
@@ -106,6 +120,10 @@ Widget.Button = styled.button`
   &:disabled {
     background-color: #979797;
     cursor: not-allowed;
+  }
+  &.other-quizes-button {
+    margin-top: 30px;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 `;
 

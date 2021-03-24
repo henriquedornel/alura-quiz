@@ -1,6 +1,7 @@
-import db from '../../db.json';
+export default async function dbHandler(req, res) {
+  const quizId = req.query.id;
+  const db = await import(`../../db/${quizId}.json`);
 
-export default function dbHandler(req, res) {
   if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;

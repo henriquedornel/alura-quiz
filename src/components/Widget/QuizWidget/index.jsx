@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import Widget from '../index';
 
-export default function MainQuizWidget({ db }) {
+export default function QuizWidget({ quiz }) {
   const router = useRouter();
   const [userName, setUserName] = useState('');
 
@@ -19,7 +19,7 @@ export default function MainQuizWidget({ db }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    router.push(`/quiz?userName=${userName}`);
+    router.push(`/quiz/${quiz.project}?userName=${userName}`);
   };
 
   return (
@@ -34,10 +34,19 @@ export default function MainQuizWidget({ db }) {
       animate="show"
     >
       <Widget.Header>
-        <h1>{db.title}</h1>
+        <h1>{quiz.title}</h1>
       </Widget.Header>
+      <img
+        alt="Descrição"
+        style={{
+          width: '100%',
+          height: '150px',
+          objectFit: 'cover',
+        }}
+        src={quiz.bg}
+      />
       <Widget.Content>
-        <p>{db.description}</p>
+        <p>{quiz.description}</p>
         <form onSubmit={(e) => onSubmit(e)}>
           <Widget.Input
             name="userName"
@@ -54,6 +63,6 @@ export default function MainQuizWidget({ db }) {
   );
 }
 
-MainQuizWidget.propTypes = {
-  db: PropTypes.object.isRequired,
+QuizWidget.propTypes = {
+  quiz: PropTypes.object.isRequired,
 };
