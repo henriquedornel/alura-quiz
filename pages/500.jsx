@@ -1,6 +1,6 @@
 import React from 'react';
-import Error from '../src/components/Error';
+import ErrorScreen from '../src/screens/Error';
 
 export default function Error500() {
-  return <Error error={500} msg="Quiz não encontrado :(" />;
+  return <ErrorScreen error={500} msg="Quiz não encontrado :(" />;
 }

@@ -25,6 +25,10 @@ const Footer = styled.footer`
       text-decoration: underline;
     }
   }
+  @media screen and (max-width: 600px) {
+    max-width: 350px;
+    margin: 24px auto;
+  }
 `;
 
 export default function FooterComponent({ ...props }) {

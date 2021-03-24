@@ -1,18 +1,5 @@
 {
-  "bg": "https://imagens.brasil.elpais.com/resizer/ub8ww2D9gd8Cd2OrT0QhWXjqTH8=/1960x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/E6LA7MIBY26CHSQXOKPY37HBHU.jpg",
   "title": "Pink Floyd",
-  "description": "Prove que você manja de Floyd",
-  "theme": {
-    "colors": {
-      "primary": "#e0b06e",
-      "secondary": "#4e2c23",
-      "mainBg": "#2b1812",
-      "contrastText": "#FFFFFF",
-      "wrong": "#FF5722",
-      "success": "#4CAF50"
-    },
-    "borderRadius": "4px"
-  },
   "questions": [
     {
       "image": "https://s2.glbimg.com/vyEONgmbOEDklYXiwmdklayhnIs=/0x0:650x650/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/u/6/HubNPNQKCUoXGPfAK1Bg/650.jpg",

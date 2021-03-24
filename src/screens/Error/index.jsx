@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Head from '../Head';
-import Background from '../Background';
-import Container from '../Container';
-import Widget from '../Widget';
-import Link from '../Link';
+import Head from '../../components/Head';
+import Background from '../../components/Background';
+import Container from '../../components/Container';
+import Widget from '../../components/Widget';
+import Link from '../../components/Link';
 
 import db from '../../../db/main.json';
 
-export default function Error({ error, msg }) {
+export default function ErrorScreen({ error, msg }) {
   return (
     <>
       <Head {...db} />
@@ -34,7 +34,7 @@ export default function Error({ error, msg }) {
   );
 }
 
-Error.propTypes = {
+ErrorScreen.propTypes = {
   error: PropTypes.number.isRequired,
   msg: PropTypes.string.isRequired,
 };
