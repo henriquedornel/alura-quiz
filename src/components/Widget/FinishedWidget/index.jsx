@@ -6,6 +6,8 @@ import Widget from '../index';
 import Link from '../../Link';
 import Social from '../../Social';
 
+import db from '../../../../db/main.json';
+
 export default function FinishedWidget({ title, project, quizUrl, results }) {
   const router = useRouter();
   const { userName } = router.query;
@@ -37,7 +39,11 @@ export default function FinishedWidget({ title, project, quizUrl, results }) {
             Jogar outros quizes
           </Widget.Button>
         </Link>
-        <Social quizUrl={quizUrl} title={title} hashtags={['alura', 'imersao-react', 'aluraquiz']} />
+        <Social
+          quizUrl={quizUrl}
+          title={`${title} - ${db.title}`}
+          hashtags={['alura', 'imersao-react', 'aluraquiz']}
+        />
       </Widget.Content>
     </Widget>
   );
