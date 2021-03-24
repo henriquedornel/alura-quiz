@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Head from '../Head';
 import Background from '../Background';
 import Container from '../Container';
 import Widget from '../Widget';
@@ -11,6 +12,7 @@ import db from '../../../db/main.json';
 export default function Error({ error, msg }) {
   return (
     <>
+      <Head {...db} />
       <Background backgroundImage={db.bg}>
         <Container>
           <Widget>

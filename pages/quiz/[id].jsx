@@ -47,11 +47,12 @@ export default function Quiz({ externalDB, project }) {
   const router = useRouter();
   const { userName } = router.query;
   const quiz = { project, ...externalDB };
+  const quizUrl = `${db.url}/quiz/${project}`;
 
   if (!userName) {
     return (
       <>
-        <Head {...db} />
+        <Head {...externalDB} url={quizUrl} />
         <Background backgroundImage={db.bg}>
           <Container>
             <Logo />
