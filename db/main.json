@@ -2,7 +2,7 @@
   "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
   "title": "AluraQuiz!",
   "description": "Responda quizes sobre assuntos variados e teste o conhecimento dos seus amigos!",
-  "url": "https://quiz-henriquedornel.vercel.app",
+  "url": "https://alura-quiz-henriquedornel.vercel.app",
   "repository": "https://github.com/henriquedornel/quiz",
   "theme": {
     "colors": {
