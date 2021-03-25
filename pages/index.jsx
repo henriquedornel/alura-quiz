@@ -17,9 +17,10 @@ export default function Home() {
   return (
     <>
       <Head {...db} />
-      <Background backgroundImage={db.bg}>
+      <Background>
         <Container>
           <Logo />
+          <h2>{db.description}</h2>
           <Grid>
             {quizes.map((quiz, index) => (
               <QuizWidget quiz={quiz} key={index} />

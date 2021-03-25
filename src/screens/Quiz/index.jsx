@@ -68,13 +68,7 @@ export default function QuizScreen({ externalDB, project }) {
             />
           )}
           {screenState === screenStates.FINISHED && (
-            <FinishedWidget
-              title={title}
-              bg={bg}
-              project={project}
-              quizUrl={quizUrl}
-              results={results}
-            />
+            <FinishedWidget title={title} project={project} quizUrl={quizUrl} results={results} />
           )}
         </Container>
         <GitHubCorner repository={db.repository} />

@@ -53,7 +53,7 @@ export default function Quiz({ externalDB, project }) {
     return (
       <>
         <Head {...externalDB} url={quizUrl} />
-        <Background backgroundImage={db.bg}>
+        <Background>
           <Container>
             <Logo />
             <QuizWidget quiz={quiz} />

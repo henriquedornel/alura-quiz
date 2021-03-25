@@ -49,7 +49,4 @@ Logo.defaultProps = {
 export default styled(Logo)`
   display: block;
   margin: auto auto 24px;
-  @media screen and (max-width: 600px) {
-    margin: auto 0 16px;
-  }
 `;

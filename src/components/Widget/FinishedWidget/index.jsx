@@ -8,7 +8,7 @@ import Social from '../../Social';
 
 import db from '../../../../db/main.json';
 
-export default function FinishedWidget({ title, bg, project, quizUrl, results }) {
+export default function FinishedWidget({ title, project, quizUrl, results }) {
   const router = useRouter();
   const { userName } = router.query;
   const name = userName ? `${userName}, ` : '';
@@ -18,15 +18,6 @@ export default function FinishedWidget({ title, bg, project, quizUrl, results })
       <Widget.Header>
         <h3>{title}</h3>
       </Widget.Header>
-      <img
-        alt="Descrição"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src={bg}
-      />
       <Widget.Content>
         <h3>
           {`${name}você acertou ${results.filter((x) => x).length} de ${results.length} perguntas!`}
@@ -60,7 +51,6 @@ export default function FinishedWidget({ title, bg, project, quizUrl, results })
 
 FinishedWidget.propTypes = {
   title: PropTypes.string.isRequired,
-  bg: PropTypes.string.isRequired,
   project: PropTypes.string.isRequired,
   quizUrl: PropTypes.string.isRequired,
   results: PropTypes.arrayOf(PropTypes.bool).isRequired,
