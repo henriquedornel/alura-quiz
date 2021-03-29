@@ -12,7 +12,6 @@ export default function FinishedWidget({ title, project, quizUrl, results }) {
   const router = useRouter();
   const { userName } = router.query;
   const name = userName ? `${userName}, ` : '';
-
   return (
     <Widget>
       <Widget.Header>
@@ -22,13 +21,6 @@ export default function FinishedWidget({ title, project, quizUrl, results }) {
         <h3>
           {`${name}você acertou ${results.filter((x) => x).length} de ${results.length} perguntas!`}
         </h3>
-        <ul>
-          {results.map((result, index) => (
-            <li key={`result__${index}`}>
-              {`#${index + 1}: ${result === true ? 'Acertou' : 'Errou'}`}
-            </li>
-          ))}
-        </ul>
         <Link href={`/quiz/${project}`}>
           <Widget.Button type="button">
             Jogar novamente

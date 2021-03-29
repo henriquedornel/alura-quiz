@@ -10,10 +10,13 @@ const Container = styled.div`
     padding-bottom: 20px;
     font-size: 1.2rem;
   }
+   p {
+    padding-bottom: 20px;
+  }
   @media screen and (max-width: 600px) {
     margin: auto;
     padding: 15px;
-    h2 {
+    h2, p {
       max-width: 350px;
       margin: 0 auto 20px;
     }

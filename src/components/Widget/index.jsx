@@ -57,7 +57,7 @@ Widget.Content = styled.div`
     list-style: none;
   }
   h3 {
-    padding-bottom: 15px;
+    padding-bottom: 40px;
     font-weight: normal;
   }
   h4 {
@@ -89,6 +89,7 @@ Widget.Input = styled.input`
 `;
 
 Widget.Input.propTypes = {
+  type: PropTypes.string,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   value: PropTypes.string,
@@ -96,6 +97,7 @@ Widget.Input.propTypes = {
 };
 
 Widget.Input.defaultProps = {
+  type: 'text',
   value: '',
 };
 
@@ -180,6 +182,31 @@ Widget.Form = styled.form`
 `;
 
 Widget.Form.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Widget.PlayButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px auto;
+  padding-left: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;  
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => theme.colors.success};
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  transition: .3s;
+  cursor: pointer;
+`;
+
+Widget.PlayButton.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
