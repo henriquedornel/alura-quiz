@@ -1,0 +1,141 @@
+{
+  "bg": "/images/friends.png",
+  "title": "Friends Quiz",
+  "description": "MariaQuiz desafia quem sabe mais sobre a série FRIENDS.",
+  "projectDB": "friends",
+  "projectLink": "https://github.com/mariarubinger/mariaquiz",
+  "author": "mariarubinger",
+  "theme": {
+    "colors": {
+      "primary": "#0d47a1",
+      "secondary": "#29b6f6",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF4040",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/W3a0zO282fuBpsqqyD/giphy.gif",
+      "title": "Quando foi lançada a primeira temporada de FRIENDS?",
+      "description": "Essa é pra aquecer",
+      "answer": 2,
+      "alternatives": [
+        "2001",
+        "2012",
+        "1994",
+        "1999"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/L33UNUADOsaH9ixEkk/giphy-downsized.gif",
+      "title": "Quantas temporadas foram lançadas?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "10 temporadas",
+        "12 temporadas",
+        "7 temporadas",
+        "5 temporadas"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/iKG1883k0VkFC217Cx/giphy-downsized.gif",
+      "title": "Quantos casamentos Ross teve?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "4",
+        "3",
+        "2",
+        "nenhum"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/eJoyqOKZTnMDZzd8t1/giphy.gif",
+      "title": "Quem era a melhor amiga da Monica no colégio?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Phoebe",
+        "Emilly",
+        "Mary",
+        "Rachel"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/dWNDTnRbDLSil2VeKx/giphy.gif",
+      "title": "Qual era o nome do macaco do Ross?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Marcel",
+        "Frank",
+        "Diaz",
+        "Mike"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/VbmrwVQdm0Ejlx5RiU/giphy-downsized.gif",
+      "title": "Com quem Phoebe se casa?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Ross",
+        "Mike",
+        "Tom",
+        "Frank"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/gjNgYBvJqGlV4q1H24/giphy.gif",
+      "title": "Quem Joey beija na festa de aniversário surpresa da Rachel?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Phoebe",
+        "A chefe de Rachel",
+        "Rachel",
+        "A mãe da Rachel"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/fQMmw06EWWRP9fvhWv/giphy.gif",
+      "title": "Sem coragem de terminar com Janice, Chandler inventa que precisa mudar-se para outro país. Que país é esse?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Nigeria",
+        "Iêmen",
+        "Cazaquistão",
+        "Egito"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/Swb2itvwCVd3LNkvNI/giphy-downsized.gif",
+      "title": "Joey fez um comercial de TV que só foi ao ar no Japão. Qual era o produto da propaganda?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Uma revista",
+        "Tênis com rodinhas",
+        "Batom para homens",
+        "Chocolate com wasabi"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/UpELR1XWDJHSj4VYnQ/giphy.gif",
+      "title": "Antes de ser um café, o que havia no lugar do Central Perk?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Um asilo",
+        "Um bar",
+        "Uma igreja",
+        "Um salão de beleza"
+      ]
+    }
+  ]
+}

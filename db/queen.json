@@ -1,0 +1,141 @@
+{
+  "bg": "/images/queen.jpg",
+  "title": "Queen Quiz",
+  "description": "Teste os seus conhecimentos sobre a melhor banda de todas!",
+  "projectDB": "queen",
+  "projectLink": "https://github.com/beatrizsabbatini/alura-quiz-queen",
+  "author": "beatrizsabbatini",
+  "theme": {
+    "colors": {
+      "primary": "#673ab7",
+      "secondary": "#8561c5",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/bn86qaAWmQKZ2/giphy.gif",
+      "title": "Como Freddie Mercury morreu?",
+      "answer": 3,
+      "description": "Essa é fácil ein",
+      "alternatives": [
+        "Overdose",
+        "Suicidou-se enquanto estava bêbado e drogado",
+        "Tuberculose",
+        "Aids"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/YWlGAzJti8XIHamqKu/giphy.gif",
+      "title": "Qual é o último trecho da música Bohemian Rhapsody",
+      "answer": 2,
+      "description": "🤔🤔🤔",
+      "alternatives": [
+        "Nothing really matters to me",
+        "Doesn´t really matter",
+        "Anyway the wind blows",
+        "Nothing really matters to me, to me"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/1gUmaI66KHnNmfT1fQ/giphy.gif",
+      "title": "Qual foi a música que a platéia cantou no Brasil, que deixou a banda sem palavras?",
+      "answer": 0,
+      "description": "Qual será? 🤔",
+      "alternatives": [
+        "Love Of My Life",
+        "Killer Queen",
+        "We Are The Champions",
+        "We Will Rock You"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/NRtPvep2usAeiPT6Yk/giphy.gif",
+      "title": "COMPLETE: Buddy, you're a young man, hard man...",
+      "answer": 2,
+      "description": "Só para os fãs!",
+      "alternatives": [
+        "Pleading with your eyes, gonna get you some peace someday",
+        "Playing in the street, gonna be a big man someday",
+        "Shouting in the street, gonna take on the world someday",
+        "Nenhuma das alternativas está correta"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3PzWaqq2jZL0WbIq7M/giphy.gif",
+      "title": "Quem compôs a (engraçada 😂) música \" I´m in love with my car\"?",
+      "answer": 0,
+      "description": "E agora? Você sabe?",
+      "alternatives": [
+        "O baterista: Roger Taylor",
+        "O vocalista: Freddie Mercury",
+        "O guitarrista: Brian May",
+        "O baixista: John Deacon"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/mNrPDm7xDf6uc/giphy.gif",
+      "title": "Para quem Freddie escreveu Love Of My Life?",
+      "answer": 1,
+      "description": "E agora? Você sabe?",
+      "alternatives": [
+        "Seu ex-gerente (e amante) Paul Prenter",
+        "Sua ex-noiva Mary Austin",
+        "Sua mãe, Jer Bulsara",
+        "Nenhuma das alternativas"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/tKbvmsLPPRy84xft49/giphy.gif",
+      "title": "O guitarrista Brian May, possuia uma segunda profissão, qual era?",
+      "answer": 1,
+      "description": "Pegadinha ein",
+      "alternatives": [
+        "Professor de física",
+        "Astrofísico",
+        "Dentista",
+        "Biólogo"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/yxs015xGKuIGh6tmfR/giphy.gif",
+      "title": "Qual era o nome da banda antes da entrada de Freddie?",
+      "answer": 3,
+      "description": "Será que você sabe?",
+      "alternatives": [
+        "The Jams",
+        "Happy",
+        "Miraculous",
+        "Smile"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/iKA7tfP3hK2jCPyV3F/giphy.gif",
+      "title": "Qual o nome da guitarra elétrica construída por Brian May?",
+      "description": "Só para os fãs",
+      "answer": 2,
+      "alternatives": [
+        "Lightning",
+        "Black Bolt",
+        "Red Special",
+        "Thunder Bolt"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/TqsbbYf3ng5na/giphy.gif",
+      "title": "Em qual album da banda encontra-se o sucesso \"Bohemian Rhapsody\"?",
+      "description": "Essa é fácil vai...",
+      "answer": 1,
+      "alternatives": [
+        "The Miracle",
+        "A night at the Opera",
+        "Innuendo",
+        "A day at the races"
+      ]
+    }
+  ]
+}

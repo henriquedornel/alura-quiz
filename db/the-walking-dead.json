@@ -1,0 +1,54 @@
+{
+  "bg": "/images/the-walking-dead.jpg",
+  "title": "The Walking Dead Quiz",
+  "description": "Quiz para saber se você sabe mesmo sobre a série The Walking Dead",
+  "projectDB": "the-walking-dead",
+  "projectLink": "https://github.com/juvio/quiz",
+  "author": "juvio",
+  "theme": {
+    "colors": {
+      "primary": "#3f3a0b",
+      "secondary": "#65613b",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "/images/the-walking-dead.jpg",
+      "title": "O que Glenn era antes do Apocalipse Zumbi?",
+      "description": "Essa é pra aquecer",
+      "answer": 1,
+      "alternatives": [
+        "Policial",
+        "Entregador de Pizza",
+        "Fazendeiro"
+      ]
+    },
+    {
+      "image": "/images/the-walking-dead.jpg",
+      "title": "Quem é o escolhido no 'Uni-Duni-Tê' do Negan?",
+      "description": "Fico triste só de lembrar",
+      "answer": 2,
+      "alternatives": [
+        "Glenn",
+        "Carl",
+        "Abraham"
+      ]
+    },
+    {
+      "image": "/images/the-walking-dead.jpg",
+      "title": "Quando que a série foi lançada pela PRIMEIRA vez?",
+      "description": "Faz tempo!",
+      "answer": 0,
+      "alternatives": [
+        "31 de outrubro de 2010",
+        "10 de setembro de 2009",
+        "31 de outubro de 2011"
+      ]
+    }
+  ]
+}

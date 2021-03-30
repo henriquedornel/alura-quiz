@@ -1,0 +1,236 @@
+{
+  "bg": "/images/harry-potter.jpg",
+  "title": "Quiz Harry Potter",
+  "description": "Teste os seus conhecimentos sobre Harry Potter e vamos ver o quão bruxo você é.",
+  "projectDB": "harry-potter",
+  "projectLink": "https://github.com/lffernandes/harrypotterquiz",
+  "author": "lffernandes",
+  "theme": {
+    "colors": {
+      "primary": "#ccb808",
+      "secondary": "#700202",
+      "border": "#020202",
+      "mainBg": "rgb(112, 2, 2)",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50",
+      "button": "#ffd000",
+      "error": "red"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://s2.glbimg.com/unJEsYcvdCYv-USVNajzNzyF_vE=/e.glbimg.com/og/ed/f/original/2015/06/18/chapeu-seletor.gif",
+      "title": "Qual foi a primeira pessoa a ser classificada para a casa Grifinória no primeiro filme?",
+      "description": "Essa é pra aquecer",
+      "answer": 0,
+      "alternatives": [
+        "Hermione Granger",
+        "Draco Malfoy",
+        "Harry Potter",
+        "Neville Longbottom"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6633/6415a41788a5549303b75531ce9a94c5fa329dab_hq.gif",
+      "title": "Qual foi a primeira vez que Harry Potter viu Sirius Black no terceiro filme?",
+      "description": "A única razão pela qual não perdi o juízo, é por que sabia que era inocente.",
+      "answer": 2,
+      "alternatives": [
+        "Quando entram no Solgueiro Lutador",
+        "Quando chegam em Hogwarts no terceiro filme",
+        "Quando saiu de casa depois do incidente com Tia Guida",
+        "Dentro do Nôitibus Andante"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6764/e84a510c8b7efbad1bdb71993058ced449134246_hq.gif",
+      "title": "De qual desses medos o bicho-papão não assume a forma na aula do Prof. Lupin? ",
+      "description": "Riddikulus",
+      "answer": 0,
+      "alternatives": [
+        "Cobra",
+        "Palhaço",
+        "Aranha",
+        "Dementador"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/62938ab5278a55160335805a935a4b81/tenor.gif?itemid=7427753",
+      "title": "Por quantos anos Sirius Black ficou preso em Azkaban? ",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/6e/21/18/6e2118d256235e031b153c498ef2ece9.gif",
+      "title": "Qual é o patrono de Luna Lovegood?",
+      "description": "Não se preocupe. Você é tão normal quanto eu.",
+      "answer": 3,
+      "alternatives": [
+        "Cervo",
+        "Golfinho",
+        "Cisne",
+        "Lebre"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6303/774b69c471927f7617927b4706b4c95424b88e3e_hq.gif",
+      "title": "Quem envia a carta de expulsão a Harry durante o quinto filme?",
+      "description": "Caro Sr. Potter, chegou ao conhecimento do ministério...",
+      "answer": 1,
+      "alternatives": [
+        "Dolores Umbridge",
+        "Mafalda Hopkirk",
+        "Cornelius Fudge",
+        "Amelia Bones"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6272/ca2428d8522b240258bfdbdfe735a9ebd3ca354d_hq.gif",
+      "title": "Como Harry, Hermione e Rony fogem depois de assaltar o Banco de Gringotes?",
+      "description": "Imperius!",
+      "answer": 0,
+      "alternatives": [
+        "Montados em um dragão",
+        "Montados em vassouras",
+        "Eles aparatam",
+        "Pelo subsolo do banco"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6331/0e368367384cdac4a5e0da5245da6b643df32f42_hq.gif",
+      "title": "Qual é a forma do patrono que atrai Harry para encontrar a espada de Godric Gryffindor?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Um cachorro",
+        "Um veado",
+        "Uma corsa",
+        "Um cavalo"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6294/0330e8ea622bcea76f2348dca041c84fea5705ec_hq.gif",
+      "title": "Como se chama o fantasma da torre de Ravenclaw?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Helena",
+        "Halia",
+        "Helga"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6353/2570fe960539e66323f3c607cbd43b424f277e47_hq.gif",
+      "title": "Que feitiço deve invocar para aparecer a Marca Negra? ",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Crucios",
+        "Avada Kadavra",
+        "Morsmordre"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6249/18607912b73e151bf9b00106dae1221e98c83c2e_hq.gif",
+      "title": "Quais são os nomes dos fundadores de Hogwarts?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin",
+        "Cedric Gryffindor, Helga Hufflepuff, Helena Ravenclaw and Salazar Slytherin",
+        "Godric Gryffindor, Helena Hufflepuff, Rowena Ravenclaw and Salazar Slytherin"
+      ]
+    },
+    {
+      "image": "https://2.bp.blogspot.com/-gC9c5zZ311w/VzpUpYAbUPI/AAAAAAAAAd8/Hq-zDUl1qO4hlO3E-xR7MmDntNh82PCrwCLcB/s1600/tumblr_m6tj73dv3p1qfinfno1_500.gif",
+      "title": "Como Harry consegue respirar debaixo d'água durante a segunda tarefa do Torneio Tribruxo?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Ele transfigura em um tubarão",
+        "Ele beija uma sereia",
+        "Ele come gillyweed",
+        "Ele executa um charme de cabeça de bolha"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6299/bb19479aae1d2b34bdd9a3b982949a1804fc3584_hq.gif",
+      "title": "Qual campeão enfrenta o dragão Meteoro Chinês na primeira tarefa do Torneio Tribruxo?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Cedrico Diggory",
+        "Harry Potter",
+        "Fleur Delacour",
+        "Vitor Krum"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/9bd04e1d6ad6779949cf2d5b410fbee4/tenor.gif?itemid=18911146",
+      "title": "Quem emprestou a moto voadora a Hagrid?",
+      "description": "Eu era e sou a mais fiel serva do Lorde das Trevas",
+      "answer": 1,
+      "alternatives": [
+        "Dumbludore",
+        "James Potter",
+        "Remus Lupin",
+        "Sirius Black"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6683/13efeb880402de91286464dbeb4ca44bf56223fc_hq.gif",
+      "title": "Quem lançou o feitiço que fez Ron vomitar lesmas?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Draco Malfoy;",
+        "Gregory Goyle",
+        "Vicent Crabb",
+        "Ron Weasley"
+      ]
+    },
+    {
+      "image": "https://25.media.tumblr.com/tumblr_lp0syd9Xtn1qlftiio1_500.gif",
+      "title": "Qual feitiço Neville se recusou a praticar em alunos do 1º ano e foi castigado pelos Carrow?",
+      "description": "Eu era e sou a mais fiel serva do Lorde das Trevas",
+      "answer": 1,
+      "alternatives": [
+        "Cruciatus",
+        "Estupefaça",
+        "Imperius",
+        "Sectumsempra"
+      ]
+    },
+    {
+      "image": "https://super.abril.com.br/wp-content/uploads/2018/07/55b16f7382bee13dc902115bharry-potter-carta-hogwarts1.gif",
+      "title": "Quem escondeu a correspondência de Harry, antes de começar o 2º ano?",
+      "description": "Eu era e sou a mais fiel serva do Lorde das Trevas",
+      "answer": 1,
+      "alternatives": [
+        "Dudley Dursley",
+        "Vernon Dursley",
+        "Dobby",
+        "Hedwig"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/tumblr_lpklkwQdwy1qabn2bo1_500.gif",
+      "title": "Qual destas pessoas a Belatriz Lestrange NÂO matou?",
+      "description": "Eu era e sou a mais fiel serva do Lorde das Trevas",
+      "answer": 1,
+      "alternatives": [
+        "Remo Lupin",
+        "Ninfadora Tonks",
+        "Sirius Black"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { BsPlay, BsPlayFill } from 'react-icons/bs';
+import { Howl } from 'howler';
+import { motion } from 'framer-motion';
 
 import Widget from '../index';
 import BackLinkArrow from '../../BackLinkArrow';
@@ -12,6 +15,18 @@ export default function QuestionWidget({
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const sound = question.sound && new Howl({
+    src: question.sound,
+    html5: true,
+    volume: 0.5,
+    autoplay: false,
+    preload: true,
+    onend: () => {
+      setIsPlaying(false);
+    },
+  });
 
   return (
     <Widget>
@@ -31,6 +46,25 @@ export default function QuestionWidget({
       <Widget.Content>
         <h2>{question.title}</h2>
         <p>{question.description}</p>
+        {question.sound && (
+          <Widget.PlayButton
+            onClick={() => {
+              if (!isPlaying) {
+                sound.play();
+                setIsPlaying(true);
+              }
+            }}
+            as={motion.button}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+            whileTap={{ scale: 1 }}
+          >
+            {!isPlaying && <BsPlay size={40} />}
+            {isPlaying && <BsPlayFill size={40} />}
+          </Widget.PlayButton>
+        )}
         <Widget.Form
           onSubmit={(e) => {
             e.preventDefault();
@@ -72,8 +106,6 @@ export default function QuestionWidget({
           <Widget.Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Widget.Button>
-          {isQuestionSubmitted && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmitted && !isCorrect && <p>Você errou!</p>}
         </Widget.Form>
       </Widget.Content>
     </Widget>

@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 
 import Widget from '../index';
 
+import db from '../../../../db/main.json';
+
 export default function QuizWidget({ quiz }) {
   const router = useRouter();
   const [userName, setUserName] = useState('');
@@ -19,7 +21,7 @@ export default function QuizWidget({ quiz }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    router.push(`/quiz/${quiz.project}?userName=${userName}`);
+    router.push(`/quiz/${quiz.projectDB}?userName=${userName}`);
   };
 
   return (
@@ -47,6 +49,13 @@ export default function QuizWidget({ quiz }) {
       />
       <Widget.Content>
         <p>{quiz.description}</p>
+        <p>
+          Autor(a):
+          {' '}
+          <a href={quiz.projectLink} target="_blank" rel="noreferrer" style={{ color: db.theme.colors.contrastText }}>
+            {quiz.author}
+          </a>
+        </p>
         <form onSubmit={(e) => onSubmit(e)}>
           <Widget.Input
             name="userName"

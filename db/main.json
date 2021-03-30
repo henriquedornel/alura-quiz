@@ -1,9 +1,10 @@
 {
-  "bg": "https://cdn.wizard.com.br/wp-content/uploads/2020/03/23171641/exemplos-de-tag-questions-em-ingles-1024x533.jpg",
+  "bg": "/images/quiz.jpg",
   "title": "AluraQuiz!",
   "description": "Responda quizes sobre assuntos variados e teste o conhecimento dos seus amigos!",
   "url": "https://alura-quiz-henriquedornel.vercel.app",
-  "repository": "https://github.com/henriquedornel/quiz",
+  "localUrl": "http://localhost:3000",
+  "repository": "https://github.com/henriquedornel/alura-quiz",
   "theme": {
     "colors": {
       "primary": "#1a237e",
@@ -18,22 +19,268 @@
   },
   "quizes": [
     {
-      "bg": "https://imagens.brasil.elpais.com/resizer/ub8ww2D9gd8Cd2OrT0QhWXjqTH8=/1960x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/E6LA7MIBY26CHSQXOKPY37HBHU.jpg",
+      "bg": "/images/pink-floyd.jpg",
       "title": "Pink Floyd Quiz",
       "description": "Responda esse quiz para provar que você realmente é floydiano(a)!",
-      "project": "pink-floyd-db"
+      "projectDB": "pink-floyd",
+      "projectLink": "https://github.com/henriquedornel/alura-quiz",
+      "author": "henriquedornel"
     },
     {
-      "bg": "https://i.pinimg.com/originals/3b/7d/59/3b7d59d51fbbd273c4605a1f5e76d2b1.png",
+      "bg": "https://monkeybuzz.com.br/wp-content/uploads/2014/10/pink_floyd.jpg",
+      "title": "Pink Floyd Quiz",
+      "description": "Qual é a música?",
+      "projectDB": "pink-floyd-songs",
+      "projectLink": "https://github.com/henriquedornel/alura-quiz",
+      "author": "henriquedornel"
+    },
+    {
+      "bg": "https://www.rockbizz.com.br/wp-content/uploads/2020/05/iron-maiden-banda-2020-830x400.jpg",
+      "title": "Iron Maiden Quiz",
+      "description": "Qual é a música?",
+      "projectDB": "pink-floyd-songs",
+      "projectLink": "https://github.com/henriquedornel/alura-quiz",
+      "author": "henriquedornel"
+    },
+    {
+      "bg": "https://www12.senado.leg.br/radio/1/capitulo-rock/2020/01/31/guns-n2019-roses/guns_n_roses.jpg/@@images/0f980605-1011-4aff-aceb-da074963fbc6.jpeg",
+      "title": "Guns N' Roses Quiz",
+      "description": "Qual é a música?",
+      "projectDB": "pink-floyd-songs",
+      "projectLink": "https://github.com/henriquedornel/alura-quiz",
+      "author": "henriquedornel"
+    },
+    {
+      "bg": "/images/queen.jpg",
+      "title": "Queen Quiz",
+      "description": "Teste os seus conhecimentos sobre a melhor banda de todas!",
+      "projectDB": "queen",
+      "projectLink": "https://github.com/beatrizsabbatini/alura-quiz-queen",
+      "author": "beatrizsabbatini"
+    },
+    {
+      "bg": "/images/music.jpg",
+      "title": "MusicQuiz",
+      "description": "O MusicQuiz é uma plataforma de quiz sobre curiosidades da música.",
+      "projectDB": "music",
+      "projectLink": "https://github.com/SidiBecker/musicquiz",
+      "author": "SidiBecker"
+    },
+    {
+      "bg": "https://store-images.s-microsoft.com/image/apps.18464.67116328302209369.766d5242-c87b-4e0a-9cef-7b3e870a4a02.b039bb28-583e-48a6-b410-71c129d21c0b?mode=scale&q=90&h=1080&w=1920",
+      "title": "Attack On Titan Quiz",
+      "description": "Prove that you know everything about Saint Seiya in this amazing Quiz!",
+      "projectDB": "saint-seiya",
+      "projectLink": "https://github.com/henriquedornel/alura-quiz",
+      "author": "henriquedornel"
+    },
+    {
+      "bg": "/images/saint-seiya.png",
       "title": "Saint Seiya Quiz",
       "description": "Prove that you know everything about Saint Seiya in this amazing Quiz!",
-      "project": "saint-seiya-quiz.vitorjsls30"
+      "projectDB": "saint-seiya",
+      "projectLink": "https://github.com/vitorjsls30/saint-seiya-quiz",
+      "author": "vitorjsls30"
     },
     {
-      "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-      "title": "Quiz CSS da Alura",
-      "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
-      "project": "aluraquiz-css.omariosouto"
+      "bg": "/images/dragon-ball.jpeg",
+      "title": "Dragon Ball Quiz",
+      "description": "Teste os seus conhecimentos sobre DRAGON BALL",
+      "projectDB": "dragon-ball",
+      "projectLink": "https://github.com/CesarSturmer/Dragon-Ball-Quiz",
+      "author": "CesarSturmer"
+    },
+    {
+      "bg": "/images/naruto.png",
+      "title": "Quiz do Naruto",
+      "description": "Teste seus conhecimentos sobre Naruto",
+      "projectDB": "naruto",
+      "projectLink": "https://github.com/vitor-kb/narutoquiz-base",
+      "author": "vitor-kb"
+    },
+    {
+      "bg": "/images/bleach.png",
+      "title": "Quiz Bleach",
+      "description": "Teste seus conhecimentos sobre o anime Bleach",
+      "projectDB": "bleach",
+      "projectLink": "https://github.com/May199/Imersao_ReactNextjs",
+      "author": "May199"
+    },
+    {
+      "bg": "/images/pokemon.jpg",
+      "title": "Poké Quiz!",
+      "description": "Teste seus conhecimentos sobre trivia Pokémon e veremos se você se tornará um mestre!",
+      "projectDB": "pokemon",
+      "projectLink": "https://github.com/risaddex/pokemon-quiz",
+      "author": "risaddex"
+    },
+    {
+      "bg": "/images/friends.png",
+      "title": "Friends Quiz",
+      "description": "MariaQuiz desafia quem sabe mais sobre a série FRIENDS.",
+      "projectDB": "friends",
+      "projectLink": "https://github.com/mariarubinger/mariaquiz",
+      "author": "mariarubinger"
+    },
+    {
+      "bg": "/images/how-i-met-your-mother.jpg",
+      "title": "How I Met Your Quiz",
+      "description": "Esse quiz vai ser legen... espera um pouquinho... ...dário! Lengendário!",
+      "projectDB": "how-i-met-your-mother",
+      "projectLink": "https://github.com/goisjulia/how-i-met-your-quiz",
+      "author": "goisjulia"
+    },
+    {
+      "bg": "/images/modern-family.jpg",
+      "title": "Modern Family Quiz",
+      "description": "Teste seus conhecimentos sobre a sitcon Modern Family e divirta-se!",
+      "projectDB": "modern-family",
+      "projectLink": "https://github.com/lizvidotti91/imersao-react-next-alura",
+      "author": "lizvidotti91"
+    },
+    {
+      "bg": "/images/everybody-hates-chris.jpg",
+      "title": "Todo Mundo Odeia o Chris - Quiz",
+      "description": "Teste os seus conhecimentos sobre a série de Todo Mundo Odeia o Chris e divirta-se!",
+      "projectDB": "everybody-hates-chris",
+      "projectLink": "https://github.com/gabriel-nt/Quiz-Everybody-Hates-Chris",
+      "author": "gabriel-nt"
+    },
+    {
+      "bg": "/images/chaves.jpg",
+      "title": "Chaves Quiz",
+      "description": "Teste os seus conhecimentos sobre a turma do Chaves !!!",
+      "projectDB": "chaves",
+      "projectLink": "https://github.com/elisses/chavesquiz",
+      "author": "elisses"
+    },
+    {
+      "bg": "/images/simpsons.jpg",
+      "title": "The Simpsons Quiz",
+      "description": "Seja bem vindo ao Quiz mais \"AY, CARAMBA\" de Springfield! Prove que você é um Amarelão de verdade e responda as perguntas que só a Lisa saberia.",
+      "projectDB": "simpsons",
+      "projectLink": "https://github.com/gabriel-brasil/thesimpsonsquiz",
+      "author": "gabriel-brasil"
+    },
+    {
+      "bg": "/images/game-of-thrones.jpg",
+      "title": "Game Of Thrones Quiz",
+      "description": "Um quiz sobre Game of Thrones criado durante a semana de imersão React v2",
+      "projectDB": "game-of-thrones",
+      "projectLink": "https://github.com/andysteel/gotquiz-alura",
+      "author": "andysteel"
+    },
+    {
+      "bg": "/images/the-walking-dead.jpg",
+      "title": "The Walking Dead Quiz",
+      "description": "Quiz para saber se você sabe mesmo sobre a série The Walking Dead",
+      "projectDB": "the-walking-dead",
+      "projectLink": "https://github.com/juvio/quiz",
+      "author": "juvio"
+    },
+    {
+      "bg": "/images/breaking-bad.png",
+      "title": "Breaking Bad Quiz",
+      "description": "Será que você consegue acertar todas as questões?",
+      "projectDB": "breaking-bad",
+      "projectLink": "https://github.com/eliasnepo/breaking-bad-quiz",
+      "author": "eliasnepo"
+    },
+    {
+      "bg": "/images/star-wars.jpg",
+      "title": "Quiz Star Wars",
+      "description": "Teste seus conhecimentos sobre Star Wars",
+      "projectDB": "star-wars",
+      "projectLink": "https://github.com/Wfelipe2011/-Star_Wars_Quiz",
+      "author": "Wfelipe2011"
+    },
+    {
+      "bg": "/images/harry-potter.jpg",
+      "title": "Quiz Harry Potter",
+      "description": "Teste os seus conhecimentos sobre Harry Potter e vamos ver o quão bruxo você é.",
+      "projectDB": "harry-potter",
+      "projectLink": "https://github.com/lffernandes/harrypotterquiz",
+      "author": "lffernandes"
+    },
+    {
+      "bg": "/images/mortal-kombat.png",
+      "title": "Mortal Kombat Quiz",
+      "description": "TEST YOUR MIND!",
+      "projectDB": "mortal-kombat",
+      "projectLink": "https://github.com/AllanGregory/mortalquiz",
+      "author": "AllanGregory"
+    },
+    {
+      "bg": "/images/toy-story.jpg",
+      "title": "Toy Story Quiz",
+      "description": "Teste seus conhecimentos sobre Toy Story",
+      "projectDB": "toy-story",
+      "projectLink": "https://github.com/camilaPereir/ToyStoryQuiz",
+      "author": "camilaPereir"
+    },
+    {
+      "bg": "/images/soul.jpg",
+      "title": "Soul Quiz",
+      "description": "Este projeto é um quiz sobre o filme Soul, da Pixar, desenvolvido durante a Imersão React da Alura usando Next.js.",
+      "projectDB": "soul",
+      "projectLink": "https://github.com/jessicafpx/soulquiz-next",
+      "author": "jessicafpx"
+    },
+    {
+      "bg": "/images/copa-do-mundo.jpg",
+      "title": "Quiz sobre as Copas do Mundo",
+      "description": "Teste o seu conhecimento referente aos acontecimentos que ocorrem durante as Copas do Mundo ⚽",
+      "projectDB": "copa-do-mundo",
+      "projectLink": "https://github.com/AntonioNarcilio/aluraquiz-copadomundo",
+      "author": "AntonioNarcilio"
+    },
+    {
+      "bg": "/images/games.jpg",
+      "title": "Quiz do 1 segundo GAMES",
+      "description": "Teste os seus conhecimentos sobre as músicas dos games ouvindo só 1 segundo delas!",
+      "projectDB": "games",
+      "projectLink": "https://github.com/VictorOda/1sec-quiz",
+      "author": "VictorOda"
+    },
+    {
+      "bg": "/images/avengers.jpg",
+      "title": "Avengers Quiz",
+      "description": "Teste os seus conhecimentos sobre os Vingadores!!!",
+      "projectDB": "avengers",
+      "projectLink": "https://github.com/penadev/avengersquiz",
+      "author": "penadev"
+    },
+    {
+      "bg": "/images/spider-man.jpg",
+      "title": "Quiz do Aranha",
+      "description": "O quanto você sabe sobre o Homem-Aranha? Descubra agora.",
+      "projectDB": "spider-man",
+      "projectLink": "https://github.com/elciojunior7/quiz-spiderman",
+      "author": "elciojunior7"
+    },
+    {
+      "bg": "/images/atari.jpg",
+      "title": "Atari Quiz",
+      "description": "Um quiz divertido para os amantes do velho console Atari.",
+      "projectDB": "atari",
+      "projectLink": "https://github.com/wesdrasalves/aluraquiz-arcade",
+      "author": "wesdrasalves"
+    },
+    {
+      "bg": "/images/interstellar.jpg",
+      "title": "Interstellar Quiz",
+      "description": "Teste o seu entendimento sobre uma das obras mais incríveis de Christopher Nolan.",
+      "projectDB": "interstellar",
+      "projectLink": "https://github.com/dotjorge/quiz-interstellar",
+      "author": "dotjorge"
+    },
+    {
+      "bg": "/images/universe.jpg",
+      "title": "Universe Quiz",
+      "description": "Embarque em nossa nave e venha testar seus conhecimentos sobre os mistérios do universo",
+      "projectDB": "universe",
+      "projectLink": "https://github.com/GustavoHerreroNunes/universe-quiz",
+      "author": "GustavoHerreroNunes"
     }
   ]
 }

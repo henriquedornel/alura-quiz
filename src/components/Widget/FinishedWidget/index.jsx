@@ -8,7 +8,7 @@ import Social from '../../Social';
 
 import db from '../../../../db/main.json';
 
-export default function FinishedWidget({ title, project, quizUrl, results }) {
+export default function FinishedWidget({ title, projectDB, quizUrl, results }) {
   const router = useRouter();
   const { userName } = router.query;
   const name = userName ? `${userName}, ` : '';
@@ -21,7 +21,7 @@ export default function FinishedWidget({ title, project, quizUrl, results }) {
         <h3>
           {`${name}você acertou ${results.filter((x) => x).length} de ${results.length} perguntas!`}
         </h3>
-        <Link href={`/quiz/${project}`}>
+        <Link href={`/quiz/${projectDB}`}>
           <Widget.Button type="button">
             Jogar novamente
           </Widget.Button>
@@ -43,7 +43,7 @@ export default function FinishedWidget({ title, project, quizUrl, results }) {
 
 FinishedWidget.propTypes = {
   title: PropTypes.string.isRequired,
-  project: PropTypes.string.isRequired,
+  projectDB: PropTypes.string.isRequired,
   quizUrl: PropTypes.string.isRequired,
   results: PropTypes.arrayOf(PropTypes.bool).isRequired,
 };

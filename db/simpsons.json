@@ -1,0 +1,81 @@
+{
+  "bg": "/images/simpsons.jpg",
+  "title": "The Simpsons Quiz",
+  "description": "Seja bem vindo ao Quiz mais \"AY, CARAMBA\" de Springfield! Prove que você é um Amarelão de verdade e responda as perguntas que só a Lisa saberia.",
+  "projectDB": "simpsons",
+  "projectLink": "https://github.com/gabriel-brasil/thesimpsonsquiz",
+  "author": "gabriel-brasil",
+  "theme": {
+    "colors": {
+      "primary": "#03a9f4",
+      "secondary": "#ffd51f",
+      "mainBg": "#333333",
+      "contrastDark": "#FFFFFF",
+      "wrong": "#e24c66",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://raw.githubusercontent.com/gabriel-brasil/thesimpsonsquiz/main/src/quizImages/question1.jpg",
+      "title": "Qual o nome do irmão gêmeo de Bart Simpson?",
+      "description": "Dica: Ele apareceu em um episódio de dia das Bruxas.",
+      "answer": 0,
+      "alternatives": [
+        "Hugo Bouvier Simpson",
+        "Bill Simpson",
+        "Orville Bouvier Simpson",
+        "Arthur Simpson"
+      ]
+    },
+    {
+      "image": "https://raw.githubusercontent.com/gabriel-brasil/thesimpsonsquiz/main/src/quizImages/question2.jpg",
+      "title": "Por quem a Lisa Simpson nunca se apaixonou?",
+      "description": "Dica: Lisa recebe um cartão de dia dos namorados, mas ela não sente o mesmo.",
+      "answer": 1,
+      "alternatives": [
+        "Nelson Muntz",
+        "Ralph Wiggum",
+        "Luke Stetson",
+        "Colin"
+      ]
+    },
+    {
+      "image": "https://raw.githubusercontent.com/gabriel-brasil/thesimpsonsquiz/main/src/quizImages/question3.jpg",
+      "title": "Qual o nome de solteira de Marge Simpson?",
+      "description": "Dica: Em um episódio, Lisa ameaça Homer dizendo que trocaria seu sobrenome Simpson pelo nome de solteira de Marge.",
+      "answer": 3,
+      "alternatives": [
+        "Gurney ",
+        "Jay",
+        "Billout",
+        "Bouvier "
+      ]
+    },
+    {
+      "image": "https://raw.githubusercontent.com/gabriel-brasil/thesimpsonsquiz/main/src/quizImages/question4.jpg",
+      "title": "Qual objeto foi descoberto dentro da cabeça de Homer Simpson?",
+      "description": "Dica: Em um Raio-X, Homer descobre que havia algo dentro de sua cabeça. Algo que ele mesmo tinha colocado.",
+      "answer": 0,
+      "alternatives": [
+        "Crayon",
+        "Moeda",
+        "Caneta",
+        "Soldadinho de brinquedo"
+      ]
+    },
+    {
+      "image": "https://raw.githubusercontent.com/gabriel-brasil/thesimpsonsquiz/main/src/quizImages/question5.jpg",
+      "title": "Em quem Maggie Simpson atirou com uma arma?",
+      "description": "Dica: Maggie estava sendo roubada quando acidentalmente disparou a arma.",
+      "answer": 2,
+      "alternatives": [
+        "Sideshow Bob",
+        "Krusty",
+        "Montgomery Burns",
+        "Moe Szyslak"
+      ]
+    }
+  ]
+}

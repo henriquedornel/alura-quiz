@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Background = styled.div`
   flex: 1;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.bg};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   &:after {
     content: "";
     display: block;
@@ -18,7 +18,7 @@ const Background = styled.div`
     background-size: cover;
     background-position: center;
     background-image:
-      linear-gradient(transparent, ${({ theme }) => theme.colors.bg}),
+      linear-gradient(transparent, ${({ theme }) => theme.colors.mainBg}),
       url(${({ backgroundImage }) => backgroundImage});
   }
   *:first-child {

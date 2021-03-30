@@ -1,8 +1,8 @@
 {
   "bg": "/images/pink-floyd.jpg",
   "title": "Pink Floyd Quiz",
-  "description": "Responda esse quiz para provar que você realmente é floydiano(a)!",
-  "projectDB": "pink-floyd",
+  "description": "Qual é a música?",
+  "projectDB": "pink-floyd-songs",
   "projectLink": "https://github.com/henriquedornel/alura-quiz",
   "author": "henriquedornel",
   "theme": {
@@ -19,9 +19,10 @@
   },
   "questions": [
     {
-      "image": "/images/pink-floyd_meddle.jpeg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d4/MeddleCover.jpeg",
       "title": "Quem gravou os vocais princiais na música \"Echoes\"?",
-      "description": "Lembre-se da performance da banda no vídeo \"Live At Pompeii\"!",
+      "description": "Lembre-se da performance da banda no famoso vídeo \"Live at Pompeii\"!",
+      "sound": "mario.ogg",
       "answer": 1,
       "alternatives": [
         "David Gilmour e Roger Waters",
@@ -31,7 +32,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_dark-side-of-the-moon.png",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
       "title": "No lendário álbum The Dark Side Of The Moon, em quais músicas está presente o saxofone de Dick Parry?",
       "description": "Dick Parry também participou dessas músicas no álbum ao vivo \"Pulse\"",
       "answer": 0,
@@ -43,7 +44,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_division-bell.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Pink_Floyd_-_Division_Bell.jpg",
       "title": "Qual dessas músicas não faz parte do álbum \"The Division Bell\"?",
       "description": "\"The Division Bell\" é segundo álbum da banda sem a presença de Roger Waters, e foi lançado em 1994",
       "answer": 3,
@@ -55,7 +56,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_band.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg",
       "title": "Quantos álbuns de estúdio o Pink Floyd já lançou oficialmente?",
       "description": "O último álbum foi lançado em 2014",
       "answer": 3,
@@ -68,7 +69,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_have-a-cigar.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/26/HaveaCigar.jpg",
       "title": "Quem é o vocalista na música \"Have A Cigar\"?",
       "description": "Essa é uma das duas músicas do Pink Floyd em que os vocais principais não foram gravados por um integrante da banda",
       "answer": 2,
@@ -80,7 +81,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_a-saucerful-of-secrets.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Saucerful_of_secrets2.jpg",
       "title": "Qual é a única música do álbum \"A Saucerful of Secrets\" que conta com os vocais de Syd Barrett?",
       "description": "É o segundo álbum de estúdio da banda, e o primeiro com a participação de David Gilmour",
       "answer": 1,
@@ -92,7 +93,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_a-momentary-lapse-of-reason.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/4e/MLoRLP01.jpg",
       "title": "Em que ano foi lançado o álbum \"A Momentary Lapse Of Reason\"?",
       "description": "Todas as músicas deste álbum foram escritas ou co-escritas por David Gilmour",
       "answer": 2,
@@ -105,7 +106,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_free-four.jpg",
+      "image": "https://scontent.frao1-2.fna.fbcdn.net/v/t1.0-9/94385985_1449005608637653_284511213646249984_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=9267fe&_nc_eui2=AeFVk3HKg0zUbi3aHIz0BQpda-o99XUYQVRr6j31dRhBVBkg1iFaTWSuj_mXcp4H_oI6XuksKRHMAo93nC6sNZJ-&_nc_ohc=AJhPtzb0lLEAX-r0vE0&_nc_pt=1&_nc_ht=scontent.frao1-2.fna&oh=7ec310ea32e29f07cffe364c990be9aa&oe=6082B951",
       "title": "Em que álbum de estúdio está presente a música \"Free Four\"?",
       "description": "Existe uma banda brasileira de tributo ao Pink Floyd com o nome desta música",
       "answer": 3,
@@ -117,7 +118,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_the-wall.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/13/PinkFloydWallCoverOriginalNoText.jpg",
       "title": "Qual o nome da última faixa do famoso álbum \"The Wall\"?",
       "description": "\"The Wall\" é o segundo álbum mais vendido da banda, atrás apenas de \"The Dark Side Of The Moon\"",
       "answer": 2,
@@ -129,7 +130,7 @@
       ]
     },
     {
-      "image": "/images/pink-floyd_animals.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/74/Pink_Floyd-Animals-Frontal.jpg",
       "title": "No álbum \"Animals\", quais animais representam as pessoas que seguem um líder cegamente sem pensamento próprio?",
       "description": "O álbum é inspirado no livro \"A Revolução dos Bichos\", de George Orwell",
       "answer": 2,

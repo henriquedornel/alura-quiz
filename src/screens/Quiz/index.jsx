@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { ThemeProvider } from 'styled-components';
 
 import Head from '../../components/Head';
 import Background from '../../components/Background';
@@ -18,17 +19,17 @@ const screenStates = {
   FINISHED: 'FINISHED',
 };
 
-export default function QuizScreen({ externalDB, project }) {
+export default function QuizScreen({ externalDB, projectDB }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const { bg, title, questions } = externalDB;
+  const { bg, theme, title, questions } = externalDB;
   const questionIndex = currentQuestion;
   const question = questions[questionIndex];
   const totalQuestions = questions.length;
 
-  const quizUrl = `${db.url}/quiz/${project}`;
+  const quizUrl = `${db.url}/quiz/${projectDB}`;
 
   const addResult = (result) => {
     setResults([...results, result]);
@@ -52,32 +53,39 @@ export default function QuizScreen({ externalDB, project }) {
   return (
     <>
       <Head {...externalDB} url={quizUrl} />
-      <Background backgroundImage={bg}>
-        <Container>
-          <Logo />
-          {screenState === screenStates.LOADING && (
-            <LoadingWidget />
-          )}
-          {screenState === screenStates.MOUNTED && (
-            <QuestionWidget
-              question={question}
-              questionIndex={questionIndex}
-              totalQuestions={totalQuestions}
-              addResult={addResult}
-              handleNext={handleNext}
-            />
-          )}
-          {screenState === screenStates.FINISHED && (
-            <FinishedWidget title={title} project={project} quizUrl={quizUrl} results={results} />
-          )}
-        </Container>
-        <GitHubCorner repository={db.repository} />
-      </Background>
+      <ThemeProvider theme={theme}>
+        <Background backgroundImage={bg}>
+          <Container>
+            <Logo />
+            {screenState === screenStates.LOADING && (
+              <LoadingWidget />
+            )}
+            {screenState === screenStates.MOUNTED && (
+              <QuestionWidget
+                question={question}
+                questionIndex={questionIndex}
+                totalQuestions={totalQuestions}
+                addResult={addResult}
+                handleNext={handleNext}
+              />
+            )}
+            {screenState === screenStates.FINISHED && (
+              <FinishedWidget
+                title={title}
+                projectDB={projectDB}
+                quizUrl={quizUrl}
+                results={results}
+              />
+            )}
+          </Container>
+          <GitHubCorner repository={db.repository} />
+        </Background>
+      </ThemeProvider>
     </>
   );
 }
 
 QuizScreen.propTypes = {
   externalDB: PropTypes.object.isRequired,
-  project: PropTypes.string.isRequired,
+  projectDB: PropTypes.string.isRequired,
 };

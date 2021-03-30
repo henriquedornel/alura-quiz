@@ -1,0 +1,105 @@
+{
+  "bg": "/images/modern-family.jpg",
+  "title": "Modern Family Quiz",
+  "description": "Teste seus conhecimentos sobre a sitcon Modern Family e divirta-se!",
+  "projectDB": "modern-family",
+  "projectLink": "https://github.com/lizvidotti91/imersao-react-next-alura",
+  "author": "lizvidotti91",
+  "theme": {
+    "colors": {
+      "primary": "#f57c00",
+      "secondary": "#37474f",
+      "mainBg": "#263238",
+      "contrastText": "#ffffff",
+      "wrong": "#b23c17",
+      "success": "#357a38"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://media4.giphy.com/media/fYGM9HVdNeSzOI3Wet/giphy.gif",
+      "title": "A sitcon Modern Family tem quantas temporadas?",
+      "description": "Essa é pra aquecer!",
+      "answer": 1,
+      "alternatives": [
+        "9",
+        "11",
+        "10",
+        "8"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/tumblr_lk6q7mV5NV1qjuuqbo1_400.gif",
+      "title": "Em que dia foi ao ar o episódio piloto de Modern Family?",
+      "description": "Duvido você acertar",
+      "answer": 2,
+      "alternatives": [
+        "23 de setembro de 2008",
+        "23 de setembro de 2010",
+        "23 de setembro de 2009",
+        "23 de setembro de 2011"
+      ]
+    },
+    {
+      "image": "https://media4.giphy.com/media/hQuNNXg0Lp3LAuTQPX/giphy.gif",
+      "title": "Qual o nome da música que Dylan toca para Haley, na primeira temporada?",
+      "description": "Você lembra desse episódio?",
+      "answer": 0,
+      "alternatives": [
+        "In the moonlight",
+        "Tonight",
+        "In the sunrise",
+        "Sweet Haley"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/122H5tXgm0WJ5C/giphy.gif",
+      "title": "Qual o nome do palhaço interpretado pelo personagem Cameron?",
+      "description": "Deixe o Cam orgulhoso! Quero ver acertar",
+      "answer": 1,
+      "alternatives": [
+        "Rizbo",
+        "Fizbo",
+        "Frisbee",
+        "Fizbeau"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/3o7TKNs79OWoMvih9K/giphy.gif",
+      "title": "Qual membro da família era o crush de Manny, em sua infância?",
+      "description": "Manny e suas mulheres... aiai",
+      "answer": 3,
+      "alternatives": [
+        "Alex",
+        "Claire",
+        "Gloria",
+        "Haley"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/KxyeX0QO9hnv7S5xaT/giphy.gif",
+      "title": "Qual música é tocada para anunciar a chegada da bebê Lily?",
+      "description": "Essa música é TU-DO!",
+      "answer": 0,
+      "alternatives": [
+        "Circle of Life, the Lion King",
+        "I just can't wait to be King, the Lion King",
+        "Hakuna Matata, the Lion King",
+        "The Lion Sleeps Tonight, the Lion King"
+      ]
+    },
+    {
+      "image": "https://media4.giphy.com/media/3o7bu66Swdn296qZDG/giphy.gif",
+      "title": "Qual o nome da empresa rival da Pritchett's Closets?",
+      "description": "O Jay fica nervoso só de ouvir falar",
+      "answer": 3,
+      "alternatives": [
+        "Closets",
+        "Closets, Closets",
+        "Closets, Closets, Closets",
+        "Closets, Closets, Closets, Closets"
+      ]
+    }
+  ]
+}

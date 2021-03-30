@@ -14,15 +14,8 @@ import QuizScreen from '../../src/screens/Quiz';
 import db from '../../db/main.json';
 
 export async function getServerSideProps({ query }) {
-  const project = query.id;
-  let url;
-
-  if (project.substring(project.length - 3) === '-db') {
-    const projectDB = project.split('-db');
-    url = `${db.url}/api/${projectDB[0]}`;
-  } else {
-    url = `https://${project}.vercel.app/api/db`;
-  }
+  const projectDB = query.id;
+  const url = `${db.url}/api/${projectDB}`;
 
   const externalDB = await fetch(url)
     .then((res) => {
@@ -38,16 +31,16 @@ export async function getServerSideProps({ query }) {
   return {
     props: {
       externalDB,
-      project,
+      projectDB,
     },
   };
 }
 
-export default function Quiz({ externalDB, project }) {
+export default function Quiz({ externalDB, projectDB }) {
   const router = useRouter();
   const { userName } = router.query;
-  const quiz = { project, ...externalDB };
-  const quizUrl = `${db.url}/quiz/${project}`;
+  const quiz = { projectDB, ...externalDB };
+  const quizUrl = `${db.url}/quiz/${projectDB}`;
 
   if (!userName) {
     return (
@@ -65,11 +58,11 @@ export default function Quiz({ externalDB, project }) {
   }
 
   return (
-    <QuizScreen externalDB={externalDB} project={quiz.project} />
+    <QuizScreen externalDB={externalDB} projectDB={quiz.projectDB} />
   );
 }
 
 Quiz.propTypes = {
   externalDB: PropTypes.object.isRequired,
-  project: PropTypes.string.isRequired,
+  projectDB: PropTypes.string.isRequired,
 };

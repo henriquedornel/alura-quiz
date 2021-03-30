@@ -48,7 +48,7 @@ Widget.Content = styled.div`
   & > *:last-child {
     margin-bottom: 0;
   }
-  p {
+  p:first-child {
     height: 50px;
   }
   ul {
@@ -191,8 +191,8 @@ Widget.PlayButton = styled.button`
   align-items: center;
   width: 50px;
   height: 50px;
-  margin: 0 10px auto;
-  padding-left: 3px;
+  margin: 0 auto 10px;
+  padding-left: 3%;
   font-size: 14px;
   font-weight: bold;
   line-height: 1;

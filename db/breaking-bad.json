@@ -1,0 +1,93 @@
+{
+  "bg": "/images/breaking-bad.png",
+  "title": "Breaking Bad Quiz",
+  "description": "Será que você consegue acertar todas as questões?",
+  "projectDB": "breaking-bad",
+  "projectLink": "https://github.com/eliasnepo/breaking-bad-quiz",
+  "author": "eliasnepo",
+  "theme": {
+    "colors": {
+      "primary": "#b79b0a",
+      "secondary": "#04612a",
+      "mainBg": "#030f00",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/Walther_White_tMlhfWLrck.png",
+      "title": "Quando a série foi lançada?",
+      "description": "Essa é pra aquecer :)",
+      "answer": 2,
+      "alternatives": [
+        "20 de Setembro de 2008",
+        "20 de Janeiro de 2009",
+        "20 de Janeiro de 2008",
+        "20 de Setembro de 2007"
+      ]
+    },
+    {
+      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/teahub.io-breaking-bad-wallpaper-hd-719964_QQ5WwDqbS.png",
+      "title": "Qual era a cor da metanfetamina que eles vendiam na série?",
+      "description": "Essa é fácil haha :)",
+      "answer": 0,
+      "alternatives": [
+        "Azul",
+        "Verde",
+        "Branca",
+        "Amarela"
+      ]
+    },
+    {
+      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/320185_WC0xa9Y4g.jpg",
+      "title": "Respectivamente, quais personagens são esses?",
+      "description": ":)",
+      "answer": 1,
+      "alternatives": [
+        "Walter White, Hank Schrader, Jesse Pinkman, Gus Fring",
+        "Walter White, Jesse Pinkman, Gus Fring, Mike Ehrmantraut",
+        "Walter White, Jesse Pinkman, Gus Fring, Hank Schrader",
+        "Walter White, Mike Ehrmantraut, Jesse Pinkman, Gus Fring"
+      ]
+    },
+    {
+      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/296854_HOOVXRlfT.jpg",
+      "title": "Qual é o nome do restaurante do Gus Fring?",
+      "description": "Esse restaurante tem história :)",
+      "answer": 0,
+      "alternatives": [
+        "Los Pollos Hermanos",
+        "Los Gallos Hermanos",
+        "Los Dos Hermanos",
+        "Los Hermanos"
+      ]
+    },
+    {
+      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/678781_n0b5lZwJd.jpg",
+      "title": "Onde se localizava o câncer de Walter White?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "No cérebro",
+        "No fígado",
+        "No pulmão",
+        "No intestino"
+      ]
+    },
+    {
+      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/1087630_-8BCXEv-Ap.jpg",
+      "title": "Qual estabelecimento era usado para lavagem de dinheiro do Sr White?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Mercado",
+        "Lava rápido",
+        "Restaurante",
+        "Salão de beleza"
+      ]
+    }
+  ]
+}

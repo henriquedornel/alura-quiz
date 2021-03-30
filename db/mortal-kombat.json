@@ -1,0 +1,153 @@
+{
+  "bg": "/images/mortal-kombat.png",
+  "title": "Mortal Kombat Quiz",
+  "description": "TEST YOUR MIND!",
+  "projectDB": "mortal-kombat",
+  "projectLink": "https://github.com/AllanGregory/mortalquiz",
+  "author": "AllanGregory",
+  "theme": {
+    "colors": {
+      "primary": "#ccb808",
+      "secondary": "#000",
+      "mainBg": "#1c1814",
+      "contrastText": "#fff",
+      "wrong": "#ff5722",
+      "success": "#4caf50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/5n3ZO8jVcAQow/giphy.gif",
+      "title": "Qual o verdadeiro nome do Scorpion?",
+      "description": "GET OVER HERE!",
+      "answer": 0,
+      "alternatives": [
+        "Hanzo Hasashi",
+        "Bi-Han",
+        "Satoshi Hasashi",
+        "Kuai Liang"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/gHQfao7b5xmmI3Tm7V/giphy.gif",
+      "title": "Quem foi o primeiro Sub-Zero?",
+      "description": "Fica frio, você vai acertar!",
+      "answer": 3,
+      "alternatives": [
+        "Liu Kang",
+        "Quan-Chi",
+        "Takeda Takahashi",
+        "Bi-Han"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/7d7lKk2nH5RJu/giphy.gif",
+      "title": "Quem é o protagonista de Mortal Kombat?",
+      "description": "Essa você faz de bicicleta!",
+      "answer": 2,
+      "alternatives": [
+        "Scorpion",
+        "Sub-Zero",
+        "Liu Kang",
+        "Johnny Cage"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/1zkIf7ikMMhwPk8gSP/giphy.gif",
+      "title": "Qual a origem do nome Noob Saibot?",
+      "description": "Não seja noob!",
+      "answer": 1,
+      "alternatives": [
+        "Um robô muito fácil de ser derrotado",
+        "Junção dos sobrenomes Ed Boon e John Tobias",
+        "Fusão do robô Saibot com o ninja inexperiente Noob",
+        "Foi uma palavra que Raiden inventou para descrever a escuridão"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13XjnBISISeT0Q/giphy.gif",
+      "title": "Apesar de ninjas, qual é considerado um semideus?",
+      "description": "Eita, Mortal Kombat tem semideus?",
+      "answer": 1,
+      "alternatives": [
+        "Ermac",
+        "Rain",
+        "Scorpion",
+        "Smoke"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/hqyghxPJECiDt3VITP/giphy.gif",
+      "title": "Quem desses personagens possuem + de 4 braços?",
+      "description": "Pensa num abraço",
+      "answer": 3,
+      "alternatives": [
+        "Goro",
+        "Sheeva",
+        "Kintaro",
+        "Kollector"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/SU8RwVK7NkviVpqQJd/giphy.gif",
+      "title": "Em quem Johnny cage foi inspirado?",
+      "description": "Johnny quem???",
+      "answer": 0,
+      "alternatives": [
+        "Jean Claude Van Damme",
+        "Bruce Lee",
+        "Arnold Schwarzenegger",
+        "Chuck Norris"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/pDsFRYkRC331e/giphy.gif",
+      "title": "Qual o maior vilão do universo de Mortal Kombat?",
+      "description": "Vish, tem tantos...",
+      "answer": 1,
+      "alternatives": [
+        "Kotal Kahn",
+        "Shao Kahn",
+        "Shinnok",
+        "Shang Tsung"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/E0CYEUH5BOoFMX62RK/giphy.gif",
+      "title": "Qual das alternativas abaixo não pertence ao Mortal Kombat?",
+      "description": "Não tome um flawless aqui",
+      "answer": 2,
+      "alternatives": [
+        "Fatality",
+        "Toasty",
+        "Rekonqueror",
+        "Finish Him"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/CatCCFZa6U8nK/giphy.gif",
+      "title": "Qual desses personagens não foi convidado nos jogos de Mortal Kombat?",
+      "description": "Finish Him!",
+      "answer": 3,
+      "alternatives": [
+        "Alien",
+        "Rambo",
+        "Kratos",
+        "Grinch"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/otbWvETTuSu64/giphy.gif",
+      "title": "Em quanto tempo o primeiro jogo de Mortal Kombat foi desenvolvido?",
+      "description": "Mercy!",
+      "answer": 0,
+      "alternatives": [
+        "10 meses",
+        "12 meses",
+        "12 finais de semana",
+        "10 semanas"
+      ]
+    }
+  ]
+}

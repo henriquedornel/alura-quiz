@@ -53,7 +53,7 @@ export default function Home() {
             <p>{`${filteredData.length} quizes encontrados:`}</p>
           )}
           <Grid>
-            {filteredData.lenght !== 0 && filteredData.map((quiz, index) => (
+            {filteredData.length !== 0 && filteredData.map((quiz, index) => (
               <QuizWidget quiz={quiz} key={index} />
             ))}
           </Grid>

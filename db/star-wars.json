@@ -1,0 +1,140 @@
+{
+  "bg": "/images/star-wars.jpg",
+  "title": "Quiz Star Wars",
+  "description": "Teste seus conhecimentos sobre Star Wars",
+  "projectDB": "star-wars",
+  "projectLink": "https://github.com/Wfelipe2011/-Star_Wars_Quiz",
+  "author": "Wfelipe2011",
+  "theme": {
+    "colors": {
+      "primary": "#ccb808",
+      "secondary": "#000",
+      "mainBg": "#1c1814",
+      "contrastText": "#fff",
+      "wrong": "#ff5722",
+      "success": "#4caf50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://i.ibb.co/9WcJ4Ws/pergunta1.gif",
+      "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
+      "description": "Essa é pra aquecer",
+      "answer": 1,
+      "alternatives": [
+        "Tattoine",
+        "Mustafar",
+        "Dagobah",
+        "Coruscant"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/K7QMK51/pergunta2.gif",
+      "title": "Qual o nome do antigo mestre de Obi Wan??",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Dookan",
+        "Qui Gon Jinn",
+        "Mace Windu",
+        "Yoda"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/M5LRXJR/pergunta3.gif",
+      "title": "Qual é a cor do sabre dos Sith?",
+      "description": "Olha a dica",
+      "answer": 0,
+      "alternatives": [
+        "Vermelho",
+        "Roxo",
+        "Azul",
+        "Verde"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/LhMTN07/pergunta4.gif",
+      "title": "O que Luke e Léia são?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Amigos",
+        "Primos",
+        "Namorados",
+        "Irmãos"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/5MrM9t6/pergunta5.gif",
+      "title": "Qual o nome do andróide que sempre aparece em todos os filmes?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "R2-D2",
+        "C-3D2",
+        "R2-PO",
+        "C-3PO"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/Hqrjhm3/pergunta6.gif",
+      "title": "Qual é a frase mais famosa que Darth Vader disse a Luke?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Não Luke, eu sou seu pai",
+        "Não, eu sou seu pai",
+        "Eu não sou seu pai"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/j64Tjk6/pergunta7.gif",
+      "title": "Qual a relação entre Darth Vader e Anakin Skywalker?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Nenhuma relação",
+        "Irmãos",
+        "Pai e filho",
+        "A mesma pessoa"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/dP4zD5X/pergunta8.gif",
+      "title": "Quantos anos o Yoda tinha antes de morrer?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "850 anos ",
+        "905 anos",
+        "50 anos",
+        "900 anos"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/vvWTVLJ/pergunta9.gif",
+      "title": "Houve quantas estrelas da morter?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "image": "https://i.ibb.co/THSHPDG/pergunta10.gif",
+      "title": "Qual é a raça do Povo da Areia de Tatooine?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Tusken ",
+        "Korun",
+        "ZABRAK",
+        "Twi'lek"
+      ]
+    }
+  ]
+}

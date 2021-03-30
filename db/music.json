@@ -1,0 +1,81 @@
+{
+  "bg": "/images/music.jpg",
+  "title": "MusicQuiz",
+  "description": "O MusicQuiz é uma plataforma de quiz sobre curiosidades da música.",
+  "projectDB": "music",
+  "projectLink": "https://github.com/SidiBecker/musicquiz",
+  "author": "SidiBecker",
+  "theme": {
+    "colors": {
+      "primary": "#ad8350",
+      "secondary": "#764134",
+      "mainBg": "#2a1a10",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "https://images.squarespace-cdn.com/content/v1/517e9335e4b0847823500845/1428183114472-JPRSR3T8D0P55XTC0ANW/ke17ZwdGBToddI8pDm48kOC11rMtl7i1spEQWbfKRPVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzvWImfAEOs2BFvvHUo1VB_0ROQF_hHngw8L3XhS6iZI2RDMeX5bOIii-KVZ2AeKFE/rod_stewart_copacabana_concierto_mc3a1s_grande_blog_curioso_impertinente.jpg",
+      "title": "Qual foi o maior público de todos os tempos em um show gratuito?",
+      "description": "A celebração da chegada do Ano Novo em 1994 no Rio de Janeiro, na Praia de Copacabana, ocorreu com a apresentação de Rod Stewart e com um público animado, que cantou todas as músicas.",
+      "answer": 2,
+      "alternatives": [
+        "850 mil",
+        "1.7 milhão",
+        "3.5 milhões",
+        "4 milhões"
+      ]
+    },
+    {
+      "image": "https://rollingstone.uol.com.br/media/_versions/legacy/2011/img_24004_guitarras-eric-clapton_widelg.jpg",
+      "title": "Que guitarrista teve sua guitarra leiloada pelo maior valor?",
+      "description": "A guitarra foi vendida por US$ 959.500 em um leilão organizado em 2004 em favor do centro de reabilitação para dependentes de drogas e álcool Crossroads.",
+      "answer": 3,
+      "alternatives": [
+        "Jimi Hendrix",
+        "Jimmy Page",
+        "Eddie Van Halen",
+        "Eric Clapton"
+      ]
+    },
+    {
+      "image": "https://media.subrayado.com.uy/adjuntos/230/imagenes/001/064/0001064718.jpg",
+      "title": "Qual foi a primeira banda a fazer shows em todos os continentes?",
+      "description": "Em 2013, a banda se apresentou na Antártida e tornou-se a primeira do mundo a fazer shows em todos os continentes.",
+      "answer": 0,
+      "alternatives": [
+        "Metallica",
+        "Rush",
+        "Iron Maiden",
+        "Red Hot Chilli Peppers"
+      ]
+    },
+    {
+      "image": "https://static.todamateria.com.br/upload/hi/st/historiadamusica-cke.jpg",
+      "title": "Qual é o instrumento musical mais antigo já encontrado?",
+      "description": "Foram descobertos desenhos desses objetos em pinturas das cavernas, há cerca de 60 mil anos.",
+      "answer": 0,
+      "alternatives": [
+        "Flauta",
+        "Apito",
+        "Harpa",
+        "Tambor"
+      ]
+    },
+    {
+      "image": "https://cdn.panrotas.com.br/portal-panrotas-statics/media-files-cache/278262/9d77df3894c683cc38cad64f4600f977aviacao1/0,0,670,400/670,400,0.68/0/default.jpg",
+      "title": "Integrantes de qual banda tinham o costume de viajarem separados?",
+      "description": "A justificativa dos músicos era que, caso um deles sofresse um acidente, a banda seguiria em atividade com os que permanecessem vivos.",
+      "answer": 1,
+      "alternatives": [
+        "Rolling Stones",
+        "Queen",
+        "Led Zeppelin",
+        "AC/DC"
+      ]
+    }
+  ]
+}
