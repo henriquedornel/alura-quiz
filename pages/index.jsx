@@ -5,7 +5,7 @@ import Background from '../src/components/Background';
 import Container from '../src/components/Container';
 import Logo from '../src/components/Logo';
 import Grid from '../src/components/Grid';
-import Widget from '../src/components/Widget';
+import SearchBar from '../src/components/SearchBar';
 import QuizWidget from '../src/components/Widget/QuizWidget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
@@ -18,11 +18,21 @@ export default function Home() {
   const [search, setSearch] = useState('');
   const [filteredData, setFilteredData] = useState(initialData || []);
 
+  const handleSearch = (e) => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    setSearch(e.target.value);
+  };
+
   useEffect(() => {
     setFilteredData(
       initialData.filter(
         (quiz) => quiz.title.toLowerCase().includes(search.toLowerCase().trim())
-        || quiz.description.toLowerCase().includes(search.toLowerCase().trim()),
+        || quiz.description.toLowerCase().includes(search.toLowerCase().trim())
+        || quiz.projectDB.toLowerCase().includes(search.toLowerCase().trim())
+        || quiz.projectLink.toLowerCase().includes(search.toLowerCase().trim()),
       ),
     );
   }, [search]);
@@ -33,19 +43,8 @@ export default function Home() {
       <Background>
         <Container>
           <Logo />
-          <h2>{db.description}</h2>
-          <div>
-            <Widget.Input
-              type="search"
-              name="search"
-              placeholder="Pesquisar Quiz..."
-              autoComplete="off"
-              autoCorrect="off"
-              autoCapitalize="none"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </div>
+          <h2 style={{ padding: 0 }}>{db.description}</h2>
+          <SearchBar value={search} onChange={(e) => handleSearch(e)} />
           {filteredData.length === 0 && (
             <p>Nenhum quiz encontrado :(</p>
           )}
