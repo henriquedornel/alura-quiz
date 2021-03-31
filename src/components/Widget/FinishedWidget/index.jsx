@@ -34,7 +34,7 @@ export default function FinishedWidget({ title, projectDB, quizUrl, results }) {
         <Social
           quizUrl={quizUrl}
           title={`${title} - ${db.title}`}
-          hashtags={['alura', 'imersao-react', 'aluraquiz']}
+          hashtags={['aluraquiz', 'alura', 'imersao-react']}
         />
       </Widget.Content>
     </Widget>
