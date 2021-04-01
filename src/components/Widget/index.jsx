@@ -192,7 +192,6 @@ Widget.PlayButton = styled.button`
   width: 50px;
   height: 50px;
   margin: 0 auto 10px;
-  padding-left: 3%;
   font-size: 14px;
   font-weight: bold;
   line-height: 1;
@@ -204,6 +203,12 @@ Widget.PlayButton = styled.button`
   outline: 0;
   transition: .3s;
   cursor: pointer;
+  svg {
+    margin: 0 auto;
+  }
+  &.stop {
+    background-color: ${({ theme }) => theme.colors.wrong};
+  }
 `;
 
 Widget.PlayButton.propTypes = {

@@ -1,0 +1,141 @@
+{
+  "bg": "/images/guns-n-roses-songs.jpg",
+  "title": "Guns N' Roses - Qual é a música?",
+  "description": "Prove que você é realmente maníaco(a) por Guns N' Roses e faça esse difícil teste! Será que você é capaz de reconhecer esses 10 solos do Slash?",
+  "projectDB": "guns-n-roses-songs",
+  "projectLink": "https://github.com/henriquedornel/alura-quiz",
+  "author": "henriquedornel",
+  "theme": {
+    "colors": {
+      "primary": "#b79b0a",
+      "secondary": "#04612a",
+      "mainBg": "#030f00",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  },
+  "questions": [
+    {
+      "image": "/images/guns-n-roses-songs-01.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_01.ogg",
+      "answer": 1,
+      "alternatives": [
+        "Since I Don't Have You",
+        "Ain't It Fun",
+        "My Michelle",
+        "Coma"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-02.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_02.ogg",
+      "answer": 0,
+      "alternatives": [
+        "It's So Easy",
+        "Nightrain",
+        "Paradise City",
+        "Welcome To The Jungle"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-03.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_03.ogg",
+      "answer": 3,
+      "alternatives": [
+        "Knockin' On Heaven's Door",
+        "Live And Let Die",
+        "Pretty Tied Up",
+        "Yesterdays"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-04.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_04.ogg",
+      "answer": 3,
+      "alternatives": [
+        "November Rain",
+        "Estranged",
+        "Knockin' On Heaven's Door",
+        "Civil War"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-05.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_05.ogg",
+      "answer": 2,
+      "alternatives": [
+        "Rocket Queen",
+        "Double Talkin' Jive",
+        "Mr. Brownstone",
+        "Dead Horse"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-06.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_06.ogg",
+      "answer": 1,
+      "alternatives": [
+        "Don't Cry",
+        "Estranged",
+        "Sweet Child O' Mine",
+        "November Rain"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-07.png",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_07.ogg",
+      "answer": 2,
+      "alternatives": [
+        "The Garden",
+        "Garden Of Eden",
+        "You're Crazy",
+        "Locomotive"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-08.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_08.ogg",
+      "answer": 3,
+      "alternatives": [
+        "It's So Easy",
+        "Welcome To The Jungle",
+        "You Could Be Mine",
+        "Nightrain"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-09.jpeg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_09.ogg",
+      "answer": 2,
+      "alternatives": [
+        "Out Ta Get Me",
+        "Used To Love Her",
+        "Move To The City",
+        "Dust N' Bones"
+      ]
+    },
+    {
+      "image": "/images/guns-n-roses-songs-10.jpg",
+      "title": "Qual é a música?",
+      "sound": "/sounds/guns-n-roses_10.ogg",
+      "answer": 2,
+      "alternatives": [
+        "Paradise City",
+        "Welcome To The Jungle",
+        "You Could Be Mine",
+        "Attitude"
+      ]
+    }
+  ]
+}

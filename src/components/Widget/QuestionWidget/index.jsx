@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { BsPlay, BsPlayFill } from 'react-icons/bs';
+import { BsPlay, BsStopFill } from 'react-icons/bs';
 import { Howl } from 'howler';
 import { motion } from 'framer-motion';
 
@@ -17,16 +17,29 @@ export default function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const sound = question.sound && new Howl({
-    src: question.sound,
-    html5: true,
-    volume: 0.5,
-    autoplay: false,
-    preload: true,
-    onend: () => {
-      setIsPlaying(false);
-    },
-  });
+  const [sound, setSound] = useState(null);
+  const hasSound = !!question.sound;
+
+  useEffect(() => {
+    if (hasSound) {
+      setSound(new Howl({
+        src: question.sound,
+        html5: true,
+        volume: 0.5,
+        autoplay: false,
+        preload: true,
+        onplay: () => {
+          setIsPlaying(true);
+        },
+        onstop: () => {
+          setIsPlaying(false);
+        },
+        onend: () => {
+          setIsPlaying(false);
+        },
+      }));
+    }
+  }, [question]);
 
   return (
     <Widget>
@@ -45,13 +58,14 @@ export default function QuestionWidget({
       />
       <Widget.Content>
         <h2>{question.title}</h2>
-        <p>{question.description}</p>
-        {question.sound && (
+        {question.description && <p>{question.description}</p>}
+        {hasSound && (
           <Widget.PlayButton
             onClick={() => {
               if (!isPlaying) {
                 sound.play();
-                setIsPlaying(true);
+              } else {
+                sound.stop();
               }
             }}
             as={motion.button}
@@ -60,21 +74,25 @@ export default function QuestionWidget({
               transition: { duration: 0.1 },
             }}
             whileTap={{ scale: 1 }}
+            disabled={isQuestionSubmitted}
+            className={isPlaying && 'stop'}
           >
             {!isPlaying && <BsPlay size={40} />}
-            {isPlaying && <BsPlayFill size={40} />}
+            {isPlaying && <BsStopFill size={40} />}
           </Widget.PlayButton>
         )}
         <Widget.Form
           onSubmit={(e) => {
             e.preventDefault();
             setIsQuestionSubmitted(true);
+            sound.fade(1, 0, 2000);
 
             setTimeout(() => {
               addResult(isCorrect);
               handleNext();
               setIsQuestionSubmitted(false);
               setSelectedAlternative(undefined);
+              sound.stop();
             }, 2000);
           }}
         >

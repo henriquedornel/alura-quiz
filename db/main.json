@@ -27,26 +27,26 @@
       "author": "henriquedornel"
     },
     {
-      "bg": "https://monkeybuzz.com.br/wp-content/uploads/2014/10/pink_floyd.jpg",
-      "title": "Pink Floyd Quiz",
-      "description": "Qual é a música?",
+      "bg": "/images/pink-floyd-songs.jpg",
+      "title": "Pink Floyd - Qual é a música?",
+      "description": "Você é capaz de adivinhar quais são essas músicas do Pink Floyd?",
       "projectDB": "pink-floyd-songs",
       "projectLink": "https://github.com/henriquedornel/alura-quiz",
       "author": "henriquedornel"
     },
     {
-      "bg": "https://www.rockbizz.com.br/wp-content/uploads/2020/05/iron-maiden-banda-2020-830x400.jpg",
-      "title": "Iron Maiden Quiz",
-      "description": "Qual é a música?",
-      "projectDB": "pink-floyd-songs",
+      "bg": "/images/iron-maiden-songs.jpg",
+      "title": "Iron Maiden - Qual é a música?",
+      "description": "Prove que você é mesmo fã da maior banda de heavy metal de todos os tempos!",
+      "projectDB": "iron-maiden-songs",
       "projectLink": "https://github.com/henriquedornel/alura-quiz",
       "author": "henriquedornel"
     },
     {
-      "bg": "https://www12.senado.leg.br/radio/1/capitulo-rock/2020/01/31/guns-n2019-roses/guns_n_roses.jpg/@@images/0f980605-1011-4aff-aceb-da074963fbc6.jpeg",
-      "title": "Guns N' Roses Quiz",
-      "description": "Qual é a música?",
-      "projectDB": "pink-floyd-songs",
+      "bg": "/images/guns-n-roses-songs.jpg",
+      "title": "Guns N' Roses - Qual é a música?",
+      "description": "Prove que você é realmente maníaco(a) por Guns N' Roses e faça esse difícil teste! Será que você é capaz de reconhecer esses 10 solos do Slash?",
+      "projectDB": "guns-n-roses-songs",
       "projectLink": "https://github.com/henriquedornel/alura-quiz",
       "author": "henriquedornel"
     },
