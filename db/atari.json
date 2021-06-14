@@ -18,7 +18,7 @@
   },
   "questions": [
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/1.gif",
+      "image": "/images/atari-01.gif",
       "title": "Qual foi o jogo mais vendido no atari?",
       "description": "Só para começar, vamos lá.",
       "answer": 1,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/2.gif",
+      "image": "/images/atari-02.gif",
       "title": "Em qual jogo foi criado o primeiro Easter Egg?",
       "description": "Vamos descobrir quem foi o pioneiro dos Easter Egg.",
       "answer": 3,
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/3.gif",
+      "image": "/images/atari-03.gif",
       "title": "Qual jogo foi um fracasso e foi cedido para ser usado como aterro no deserto?",
       "description": "Realmente eu joguei e não era bom, rs.",
       "answer": 4,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/8.gif",
+      "image": "/images/atari-04.gif",
       "title": "Em qual ano foi criado o Atari?",
       "description": "Não vai pesquisar no Google não hein.",
       "answer": 2,
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/5.gif",
+      "image": "/images/atari-05.gif",
       "title": "Qual o primeiro jogo a usar password?",
       "description": "Isso foi o facilitador para os games.",
       "answer": 1,
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/6.gif",
+      "image": "/images/atari-06.gif",
       "title": "O primeiro prêmio de Jogo do Ano foi dado a qual jogo?",
       "description": "Vamos vê se vocês desconbrem essa.",
       "answer": 4,
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "image": "https://aluraquiz-arcade-wesdrasalves.vercel.app/7.gif",
+      "image": "/images/atari-07.gif",
       "title": "Qual dessas pessoas foi funcionário da Atari?",
       "description": "Essa não é difícil.",
       "answer": 3,

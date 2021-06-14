@@ -18,7 +18,7 @@
   },
   "questions": [
     {
-      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/Walther_White_tMlhfWLrck.png",
+      "image": "/images/breaking-bad-01.png",
       "title": "Quando a série foi lançada?",
       "description": "Essa é pra aquecer :)",
       "answer": 2,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/teahub.io-breaking-bad-wallpaper-hd-719964_QQ5WwDqbS.png",
+      "image": "/images/breaking-bad-02.png",
       "title": "Qual era a cor da metanfetamina que eles vendiam na série?",
       "description": "Essa é fácil haha :)",
       "answer": 0,
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/320185_WC0xa9Y4g.jpg",
+      "image": "/images/breaking-bad-03.jpg",
       "title": "Respectivamente, quais personagens são esses?",
       "description": ":)",
       "answer": 1,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/296854_HOOVXRlfT.jpg",
+      "image": "/images/breaking-bad-04.jpg",
       "title": "Qual é o nome do restaurante do Gus Fring?",
       "description": "Esse restaurante tem história :)",
       "answer": 0,
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/678781_n0b5lZwJd.jpg",
+      "image": "/images/breaking-bad-05.jpg",
       "title": "Onde se localizava o câncer de Walter White?",
       "description": "",
       "answer": 2,
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "image": "https://ik.imagekit.io/b2twgpcgqmc/Breaking_bad_quiz/1087630_-8BCXEv-Ap.jpg",
+      "image": "/images/breaking-bad-06.jpg",
       "title": "Qual estabelecimento era usado para lavagem de dinheiro do Sr White?",
       "description": "",
       "answer": 1,

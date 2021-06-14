@@ -20,7 +20,7 @@
   },
   "questions": [
     {
-      "image": "https://media.tenor.com/images/14aeb96331d42064b81501c825f25db0/tenor.gif",
+      "image": "/images/chaves-01.gif",
       "title": "Qual é o nome completo de Sr Barriga?",
       "description": "Essa é pra aquecer",
       "answer": 0,
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "image": "https://media.tenor.com/images/130e21160b135445ce5b46e559ae7f3b/tenor.gif",
+      "image": "/images/chaves-02.gif",
       "title": "Quantos meses Seu Madruga deve de aluguel?",
       "description": "Faz tempo em haha",
       "answer": 1,
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "image": "https://media.tenor.com/images/78babc3576cd45a1ee95bbf4c9caf32d/tenor.gif",
+      "image": "/images/chaves-03.gif",
       "title": "De quem Seu Madruga é pai?",
       "description": "Vamos lá!",
       "answer": 2,
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "image": "https://media.tenor.com/images/9012c8e4b0b71508858b730b57c047a6/tenor.gif",
+      "image": "/images/chaves-04.gif",
       "title": "De quem é a frase 'prefiro morrer do que perder a vida'?",
       "description": "Faz tempo em haha",
       "answer": 0,
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "image": "https://media.tenor.com/images/acd6684e02dcb98e1a8a0c8b4e9d0dec/tenor.gif",
+      "image": "/images/chaves-05.gif",
       "title": "Quem interpretou Professor Girafales?",
       "description": "Faz tempo em haha",
       "answer": 2,

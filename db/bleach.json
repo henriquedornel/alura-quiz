@@ -18,7 +18,7 @@
   },
   "questions": [
     {
-      "image": "https://blog.topolyan.com/wp-content/uploads/2019/07/Ichigo_Kurosaki.gif",
+      "image": "/images/bleach-01.gif",
       "title": "Qual a origem dos poderes do Ichigo? ",
       "description": "",
       "answer": 3,
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "image": "http://pa1.narvii.com/6024/a62611df8d22a15f44239e82b5c2eb29846b7a01_00.gif",
+      "image": "/images/bleach-02.gif",
       "title": "De qual família o Isshin Kurosaki era antes de se tornar humano?",
       "description": "Dica, Ichigo foi ajudado por membros dessa família quando foi salvar Rukia.",
       "answer": 2,
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "image": "https://thumbs.gfycat.com/ConventionalOrderlyDrafthorse-small.gif",
+      "image": "/images/bleach-03.gif",
       "title": "Quem criou as Kaizo Konpaku (almas modificadas), como o KON?",
       "description": "Informação completa apenas no mangá.",
       "answer": 4,
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "image": "https://data.whicdn.com/images/328457077/original.gif",
+      "image": "/images/bleach-04.gif",
       "title": "Yoruichi possui Zanpakutou?",
       "description": "",
       "answer": 1,
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "image": "https://media.comicbook.com/2019/02/bleach-theory-orihime-1160158-1280x0.jpeg",
+      "image": "/images/bleach-05.jpeg",
       "title": "Qual a origem dos poderes da Orihime e Chad?",
       "description": "Novel Hisagi",
       "answer": 3,

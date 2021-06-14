@@ -18,7 +18,7 @@
   },
   "questions": [
     {
-      "image": "https://i.gifer.com/2wFz.gif",
+      "image": "/images/everybody-hates-chris-01.gif",
       "title": "Quando foi lançado o primeiro episódio da série?",
       "description": "Sacomé, né",
       "answer": 1,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "image": "https://pa1.narvii.com/6242/e3acdaee545a33105296a5df2af1a17267a4a70f_hq.gif",
+      "image": "/images/everybody-hates-chris-02.gif",
       "title": "Quantas temporadas a série teve?",
       "description": "Cara, ela tá tão na sua!",
       "answer": 3,
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "image": "https://j.gifs.com/yP80Rw.gif",
+      "image": "/images/everybody-hates-chris-03.gif",
       "title": "Qual o nome do episódio que Chris impede um furto de Malvo?",
       "description": "Acha que eu estou brincando? Quando estiver no chuveiro, eu vou estar lá...",
       "answer": 3,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "image": "https://pa1.narvii.com/6828/2c33647e7b439724c6cd44573052b7365da795cd_hq.gif",
+      "image": "/images/everybody-hates-chris-04.gif",
       "title": "Complete a frase de Rochelle: 'Vou te bater...'",
       "description": "Tá com cara de quem tá aprontando",
       "answer": 0,
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "image": "https://i0.wp.com/uploads.disquscdn.com/images/a238ba6ebd5558f3b3ec8c0008512d7eff0456eb8b0b5006c2e0b4009a57deaa.gif?w=750&ssl=1",
+      "image": "/images/everybody-hates-chris-05.gif",
       "title": "Qual os dois empregos de Julius?",
       "description": "Não preciso disso, meu marido tem dois empregos",
       "answer": 2,
