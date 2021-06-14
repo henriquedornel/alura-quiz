@@ -85,14 +85,14 @@ export default function QuestionWidget({
           onSubmit={(e) => {
             e.preventDefault();
             setIsQuestionSubmitted(true);
-            sound.fade(1, 0, 2000);
+            if (hasSound) sound.fade(1, 0, 2000);
 
             setTimeout(() => {
               addResult(isCorrect);
               handleNext();
               setIsQuestionSubmitted(false);
               setSelectedAlternative(undefined);
-              sound.stop();
+              if (hasSound) sound.stop();
             }, 2000);
           }}
         >
