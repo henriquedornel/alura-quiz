@@ -27,22 +27,6 @@
       "author": "henriquedornel"
     },
     {
-      "bg": "/images/pink-floyd-songs.jpg",
-      "title": "Pink Floyd - Qual é a música?",
-      "description": "Você é capaz de adivinhar quais são essas músicas do Pink Floyd?",
-      "projectDB": "pink-floyd-songs",
-      "projectLink": "https://github.com/henriquedornel/alura-quiz",
-      "author": "henriquedornel"
-    },
-    {
-      "bg": "/images/iron-maiden-songs.jpg",
-      "title": "Iron Maiden - Qual é a música?",
-      "description": "Prove que você é mesmo fã da maior banda de heavy metal de todos os tempos!",
-      "projectDB": "iron-maiden-songs",
-      "projectLink": "https://github.com/henriquedornel/alura-quiz",
-      "author": "henriquedornel"
-    },
-    {
       "bg": "/images/guns-n-roses-songs.jpg",
       "title": "Guns N' Roses - Qual é a música?",
       "description": "Prove que você é realmente maníaco(a) por Guns N' Roses e faça esse difícil teste! Será que você é capaz de reconhecer esses 10 solos do Slash?",
@@ -65,14 +49,6 @@
       "projectDB": "music",
       "projectLink": "https://github.com/SidiBecker/musicquiz",
       "author": "SidiBecker"
-    },
-    {
-      "bg": "/images/attack-on-titan.jpg",
-      "title": "Attack On Titan Quiz",
-      "description": "Prove that you know everything about Saint Seiya in this amazing Quiz!",
-      "projectDB": "saint-seiya",
-      "projectLink": "https://github.com/henriquedornel/alura-quiz",
-      "author": "henriquedornel"
     },
     {
       "bg": "/images/saint-seiya.png",
